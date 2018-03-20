@@ -1,0 +1,135 @@
+<html>
+<head>
+  <title>Registro</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <!-- External Scripts from CDNs -->
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+  integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+  crossorigin="anonymous"> PureCSS -->
+  <!--<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script> JQuery (comment this when in production!) -->
+  <script src='https://www.google.com/recaptcha/api.js'
+  async defer></script> <!-- Google's RECAPTCHA API -->
+
+  <!-- Custom CSS for Registration Form -->
+  <!-- <link rel="stylesheet" href="./css/signupform.css" type="text/css">-->
+</head>
+<body>
+  <a id="registro"></a>
+
+  <!-- Register Section -->      
+  <div class="pure-g" id="main-wrap">
+
+    <!-- Register Box -->
+    <div class="pure-u-3-5">
+
+        <div class="signup-wrapper">
+          <div id="signup-head">
+            Reg&iacute;strate
+          </div>
+
+          <div class="signup-body">
+
+            <form action="controller/signUp.php" method="POST" id="signupForm" class="pure-form pure-form-aligned">
+              <fieldset>
+                <div class="pure-control-group">
+                  <label for="firstName">Nombre(s)&nbsp;*</label>
+                  <input id="firstName" name="firstName" type="text" placeholder="Ingresa tu Nombre" class="pure-input-1-2" required>
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="lastName">Apellidos&nbsp;*</label>
+                  <input id="lastName" name="lastName" type="text" placeholder="Ingresa tu Apellido" class="pure-input-1-2" required>
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="email">Correo Electrónico&nbsp;*</label>
+                  <input id="email" name="email" type="email" placeholder="Tu Correo Electrónico" class="pure-input-1-2" required>
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="mobilePhone">Celular&nbsp;*</label>
+                  <input id="mobilePhone" name="mobilePhone" type="text" placeholder="Tu Celular con LADA" class="pure-input-1-2" required>
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="sourceSelect">¿Cómo te enteraste de AIESEC?&nbsp;*</label>
+                  <select id="sourceSelect" name="sourceSelect" class="pure-u-1-2" required>
+                    <option disabled selected value="">Selecciona una opción</option>
+                    <!-- Values are harcoded from those from Podio -->
+                    <option value="1">Publicidad en Facebook</option>
+                    <option value="2">Página de Facebook</option>
+                    <option value="3">Sitio web</option>
+                    <option value="4">Twitter</option>
+                    <option value="5">Instagram</option>
+                    <option value="6">LinkedIn</option>
+                    <option value="8">Amigos o Familia</option>
+                    <option value="9">Soy Miembro de AIESEC</option>
+                    <option value="10">Publicidad en Universidad</option>
+                    <option value="11">Stands en universidades y/o activaciones</option>
+                    <option value="12">Eventos externos</option>
+                    <option value="16">Eventos en tu universidad</option>
+                    <option value="13">Radio, televisión, prensa, revistas</option>
+                    <option value="14">Un Alumni me recomendó</option>
+                    <option value="15">Publicación en Medios</option>
+                    <option value="18">Medios universitarios</option>
+                    <option value="19">Sesión informativa</option>
+                    <option value="20">Soy alumni de la organización</option>
+                  </select>
+                </div>
+
+                <div class="pure-control-group">
+                  <label for="stateSelect">Tu Estado&nbsp;*</label>
+                  <select id="stateSelect" name="stateSelect" class="pure-u-1-2" required>
+                    <option disabled selected value="">Cargando...</option>
+                  </select>
+                </div>
+
+                <div class="pure-control-group" id="universitySelect-wrapper">
+                  <label for="universitySelect">Tu Universidad&nbsp;*</label>
+                  <select id="universitySelect" name="universitySelect" class="pure-u-1-2" disabled  required>
+                    <option disabled selected value="">Selecciona primero tu estado</option>
+                  </select>
+                </div>
+
+                <!-- Checkbox Privacidad -->
+                <div id="footer_wrap">
+                  <label for="privacyCheck" class="pure-checkbox">
+                    <input id="privacyCheck" name="privacyCheck" type="checkbox" 
+                    oninvalid="this.setCustomValidity('Debes aceptar el aviso de privacidad')"
+                    onchange="this.setCustomValidity('')" required>
+                    He leído el <a href="https://aiesec.org.mx/aviso-de-privacidad/" target="_blank">aviso de privacidad</a> de AIESEC México, A.C.
+                  </label>
+
+                  <div id="recaptcha-div" class="g-recaptcha" align="center"
+                  data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                  data-callback="selectedCaptcha"
+                  data-expired-callback="expiredCaptcha"></div>
+
+                  <!-- Hidden Fields -->
+                  <input type="hidden" name="product" value="{product}">
+
+
+                  <input type="hidden" name="website_url" value="{website_url}"> <!-- Legacy: This is meant to be used as referrer(?), I guess -->
+
+                  <button id="submitButton" type="submit" class="pure-button pure-button-primary">Registrarme</button>
+                  <div id="error" class="error"><p></p></div> <!-- Legacy: Leave as is -->
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        
+</div>
+
+<!--
+  data-sitekey="6Ld8uAkUAAAAAMqyl5rjRbaUSP6CQlGzSAAy1pqZ"
+<script src="./js/signup_main.js"></script>
+<script src="./js/ur_allocations.js"></script>
+-->
+</body>
+</html>

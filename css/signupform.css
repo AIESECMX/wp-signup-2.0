@@ -1,0 +1,91 @@
+:root {
+  --aiesec-color: rgb(3,126,243);
+  --gv-color: rgb(248,90,64);
+  --gt-color: rgb(10,142,160);
+  --ge-color: rgb(48,195,158);
+}
+
+#main-wrap * {
+  font-family: 'Lato', sans-serif !important;
+}
+
+#main-wrap {
+  padding-bottom: 30px;
+}
+
+#main-wrap > div {
+  margin: 2em auto;
+}
+
+.signup-wrapper {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.41);
+  border-radius: 15px;
+}
+
+#signup-head {
+  color: #ffffff;
+  background-color: var(--aiesec-color);
+  padding: 0.5em 0;
+  font-size: 2em;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+}
+
+.signup-body {
+  padding: 1.5em 5%;
+  background-color:#fff;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+}
+
+#universitySelect-wrapper {
+  display: none;
+}
+
+#footer_wrap {
+  padding-top: 1em;
+  text-align: center;
+}
+
+.g-recaptcha {
+  padding: 2em 0;
+}
+
+label {
+  font-weight: 300 !important;
+  font-size: 1em !important;
+}
+
+select, input[type="text"], input[type="email"], input[type="password"] {
+  background-color: #f3f4f7 !important;
+  line-height: 1em !important;
+  height: auto !important;
+}
+
+#submitButton {
+  margin: 0 0 2em 0;
+}
+
+select {
+  padding-right: 10em;
+}
+
+option:not(:checked) { 
+    background-color: #fff;
+}
+
+.error {
+  display: none;
+}
+
+.error-show {
+  display: flex;
+  border: thick solid #F31212 !important;
+  padding: 0.5em 1em;
+}
+
+.error-show > p {
+  width: 100%;
+  font-size: 1.25em;
+  text-align: center;
+}

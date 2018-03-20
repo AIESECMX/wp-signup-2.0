@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <title>Registro</title> -->
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <script src='https://www.google.com/recaptcha/api.js'
+  async defer></script> <!-- Google's RECAPTCHA API -->
+</head>
+<body>
+  <style type="text/css">
+    .right {
+      text-align: right !important;
+    }
+  </style>
+
+  <!-- Register Section -->      
+  <div class="pure-g" id="main-wrap">
+
+    <!-- Register Box -->
+    <div class="pure-u-4-5">
+        <div class="signup-wrapper">
+          <div id="signup-head">
+            Reg&iacute;strate
+          </div>
+
+          <div class="signup-body">
+
+            <form action="{action_url}" method="POST" id="signupForm" class="pure-form pure-form-aligned">
+              <fieldset>
+                <div class="pure-g">
+                  <label for="firstName" class="pure-u-10-24 right">Nombre(s)&nbsp;*&nbsp;&nbsp;</label>
+                  <input id="firstName" name="firstName" type="text" placeholder="Ingresa tu Nombre" class="pure-u-1-2" required>
+                </div>
+
+                <div class="pure-g">
+                  <label for="lastName" class="pure-u-10-24 right">Apellidos&nbsp;*&nbsp;&nbsp;</label>
+                  <input id="lastName" name="lastName" type="text" placeholder="Ingresa tu Apellido" class="pure-input-1-2" required>
+                </div>
+
+                <div class="pure-g">
+                  <label for="email" class="pure-u-10-24 right">Correo Electrónico&nbsp;*&nbsp;&nbsp;</label>
+                  <input id="email" name="email" type="email" placeholder="Tu Correo Electrónico" class="pure-input-1-2" required>
+                </div>
+
+                <div class="pure-g">
+                  <label for="email" class="pure-u-10-24 right">Correo Electrónico&nbsp;*&nbsp;&nbsp;</label>
+                  <input id=
+                  "email" name="email" type="email" placeholder="Tu Correo Electrónico" class="pure-input-1-2" required>
+                </div>
+
+                <div class="pure-g">
+                  <label for="mobilePhone" class="pure-u-10-24 right">Celular&nbsp;*&nbsp;&nbsp;</label>
+                  <input id="mobilePhone" name="mobilePhone" type="text" placeholder="Tu Celular con LADA" class="pure-input-1-2" required>
+                </div>
+
+                <div class="pure-g">
+                  <label for="sourceSelect" class="pure-u-10-24 right">¿Cómo te enteraste de AIESEC?&nbsp;*&nbsp;&nbsp;</label>
+                  <select id="sourceSelect" name="sourceSelect" class="pure-u-1-2" required>
+                    <option disabled selected value="">Selecciona una opción</option>
+                    <!-- Values are harcoded from those from Podio -->
+                    <option value="1">Publicidad en Facebook</option>
+                    <option value="2">Página de Facebook</option>
+                    <option value="3">Sitio web</option>
+                    <option value="4">Twitter</option>
+                    <option value="5">Instagram</option>
+                    <option value="6">LinkedIn</option>
+                    <option value="8">Amigos o Familia</option>
+                    <option value="9">Soy Miembro de AIESEC</option>
+                    <option value="10">Publicidad en Universidad</option>
+                    <option value="11">Stands en universidades y/o activaciones</option>
+                    <option value="12">Eventos externos</option>
+                    <option value="16">Eventos en tu universidad</option>
+                    <option value="13">Radio, televisión, prensa, revistas</option>
+                    <option value="14">Un Alumni me recomendó</option>
+                    <option value="15">Publicación en Medios</option>
+                    <option value="18">Medios universitarios</option>
+                    <option value="19">Sesión informativa</option>
+                    <option value="20">Soy alumni de la organización</option>
+                  </select>
+                </div>
+
+                <div class="pure-g">
+                  <label for="stateSelect" class="pure-u-10-24 right">Tu Estado&nbsp;*&nbsp;&nbsp;</label>
+                  <select id="stateSelect" name="stateSelect" class="pure-u-1-2" required>
+                    <option disabled selected value="">Cargando...</option>
+                  </select>
+                </div>
+
+                <div class="pure-g" id="universitySelect-wrapper">
+                  <label for="universitySelect" class="pure-u-10-24 right">Tu Universidad&nbsp;*&nbsp;&nbsp;</label>
+                  <select id="universitySelect" name="universitySelect" class="pure-u-1-2" disabled  required>
+                    <option disabled selected value="">Selecciona tu estado</option>
+                  </select>
+                </div>
+
+                <!-- Checkbox Privacidad -->
+                <div id="footer_wrap">
+                  <label for="privacyCheck" class="pure-checkbox">
+                    <input id="privacyCheck" name="privacyCheck" type="checkbox" 
+                    oninvalid="this.setCustomValidity('Debes aceptar el aviso de privacidad')"
+                    onchange="this.setCustomValidity('')" required>
+                    He leído y estoy de acuerdo con el <a href="https://aiesec.org.mx/aviso-de-privacidad/" target="_blank">aviso de privacidad</a> de AIESEC México, A.C.
+                  </label>
+
+                  <div id="recaptcha-div" class="g-recaptcha" align="center"
+                  data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                  data-callback="selectedCaptcha"
+                  data-expired-callback="expiredCaptcha"></div>
+
+                  <!-- Hidden Fields -->
+                  <input type="hidden" name="product" value="{product}">
+                  <input type="hidden" name="website_url" value="{website_url}"> <!-- Legacy: Left as is. This is meant to be used as referrer(?), I guess -->
+
+                  <button id="submitButton" type="submit" class="pure-button pure-button-primary">Registrarme</button>
+                  <div id="error" class="error"><p></p></div> <!-- Legacy: Leave as is -->
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+    </div> 
+  </div>
+
+</body>
+</html>
