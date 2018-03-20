@@ -15,8 +15,10 @@ function expiredCaptcha() {
 }
 
 function validateForm(e) {
+  $(this).prop('disabled', true);
   if(recaptchaValidation) return true;
   e.preventDefault();
+  $(this).prop('disabled', false);
   alert('Por favor completa la verificación final del formulario')
 }
 
