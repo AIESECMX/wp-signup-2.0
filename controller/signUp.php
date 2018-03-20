@@ -16,7 +16,7 @@ $configs_external = include('../wp_login_config.php'); //Test environment
 //Is this debug mode?
 // * If yes(1), set captcha sandbox & test Podio Workspace;
 // * else(0), set production keys
-define('DEBUG',1);
+define('DEBUG',0);
 
 //Config the <form> fields name to be retrieved from $_POST
 define('FIRST_NAME',"firstName");

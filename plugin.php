@@ -25,7 +25,7 @@ function load_scripts($palette = "--aiesec-color") {
   wp_enqueue_style('singup-style',plugins_url('css/signupform.css',__FILE__));
 }
 
-function getForm($product = "") {
+function getForm($product = "",$configs = null) {
   //Get File
   $form = file_get_contents('form.html',TRUE);
   
@@ -36,6 +36,9 @@ function getForm($product = "") {
   $form = str_replace("{website_url}",$actual_link,$form);
   $form = str_replace("{action_url}",plugins_url('controller/signUp.php',__FILE__),$form);
   $form = str_replace("{product}",$product,$form);
+  if ($configs != null) {
+    $form = str_replace($configs['recaptcha_public_test'],$configs['recaptcha_public'],$form);
+  }
 
   return $form;
 }
@@ -70,9 +73,8 @@ function signup_form( $atts ) {
         'program' => '',
     ), $atts );
 
-    $form = getForm();
-
     $configs = include('config.php');
+    $form = getForm("",$configs);
     
     //Legacy: Better leave it "as is"
     if(isset($_GET["thank_you"]) && $_GET["thank_you"]==="true") {
@@ -97,9 +99,8 @@ function signup_form_ogt( $atts ) {
         'program' => '',
     ), $atts );
 
-    $form = getForm("ogt");
-
     $configs = include('config.php');
+    $form = getForm("ogt",$configs);
     
     //Legacy: Better leave it "as is"
     if(isset($_GET["thank_you"]) && $_GET["thank_you"]==="true") {
@@ -125,9 +126,8 @@ function signup_form_ogv( $atts ) {
         'program' => '',
     ), $atts );
 
-    $form = getForm("ogv");
-
     $configs = include('config.php');
+    $form = getForm("ogv",$configs);
 
     //Legacy: Better leave it "as is"
     if(isset($_GET["thank_you"]) && $_GET["thank_you"]==="true") {
@@ -150,9 +150,8 @@ function signup_form_oge( $atts ) {
         'program' => '',
     ), $atts );
 
-    $form = getForm("oge");
-
     $configs = include('config.php');
+    $form = getForm("oge",$configs);
     
     //Legacy: Better leave it "as is"
     if(isset($_GET["thank_you"]) && $_GET["thank_you"]==="true") {
