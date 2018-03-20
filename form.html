@@ -44,8 +44,10 @@
                 </div>
 
                 <div class="pure-g">
-                  <label for="email" class="pure-u-10-24 right">Correo Electrónico&nbsp;*&nbsp;&nbsp;</label>
-                  <input id="email" name="email" type="email" placeholder="Tu Correo Electrónico" class="pure-input-1-2" required>
+                  <label for="password" class="pure-u-10-24 right">Contraseña&nbsp;*&nbsp;&nbsp;</label>
+                  <input id="password" name="password" type="password" placeholder="Una contraseña para nuestro portal" class="pure-input-1-2" required
+                   oninvalid="this.setCustomValidity('La contraseña debe contener al menos: \n&#8226;&nbsp;Una mayúscula \n&#8226;&nbsp;Una minúscula \n&#8226;&nbsp;Un número \n&#8226;&nbsp;Mínimo 8 caracteres')"
+                   oninput="setCustomValidity('')" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
                 </div>
 
                 <div class="pure-g">

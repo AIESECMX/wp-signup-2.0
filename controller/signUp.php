@@ -65,7 +65,8 @@ $_SERVER['REQUEST_METHOD'] === 'POST' or die( 'Plugin can only be accessed throu
 
 //First check that CAPTCHA is correctly filled
 if( check_captcha() ) {
-  if( validate_post($_POST) ) {
+  //                    REMOVE THIS PART AS SOON AS WE HAVE RANDOM PASSWORDS
+  if( validate_post($_POST) && isset($_POST['password']) ) {
     //Retrieves the product depending on the source form.
     //If there's no valid product input selects GV as default 
     $product = getProduct($_POST[PRODUCT_SELECT]);
@@ -189,7 +190,7 @@ function sendToExpa($lc_id){
   $gis_token = $matches[1];
   echo "GIS CSRF Token: ".$gis_token."<br>";
 
-  $tmp_pass = "Aiesec123"; //getRandPasswd();
+  //$tmp_pass = "Aiesec123"; //getRandPasswd();
 
   //Set fields from the data sent by the user
   $fields = array(
@@ -199,7 +200,7 @@ function sendToExpa($lc_id){
       'first_name' => htmlspecialchars($_POST[FIRST_NAME]),
       'last_name' => htmlspecialchars($_POST[LAST_NAME]),
       'email' => htmlspecialchars($_POST[EMAIL]),
-      'password' => htmlspecialchars($tmp_pass),
+      'password' => htmlspecialchars($_POST['password']), //This is going to be changed for a random passsword!
       'country_code' => MC_CODE,
       'country' => MC_NAME,
       'mc' => MC_ID,
