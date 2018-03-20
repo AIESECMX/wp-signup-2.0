@@ -4,11 +4,6 @@
 require '../vendor/autoload.php';
 require_once './errors/ExpaExceptions.php';
 
-//Load Private Keys from Configuration File
-//Do not keep on local folder. Keep outside of public-web to ensure non authorized people won't enter. Also, chmod this accordingly :)
-//$configs_external = include('/home/webmaster/wp-config-files/signup_config.php');
-$configs_external = include('../wp_login_config.php'); //Test environment
-
 //|--------------|
 //| DEFINITIONS  |
 //|--------------|
@@ -17,6 +12,15 @@ $configs_external = include('../wp_login_config.php'); //Test environment
 // * If yes(1), set captcha sandbox & test Podio Workspace;
 // * else(0), set production keys
 define('DEBUG',0);
+
+//Load Private Keys from Configuration File
+//Do not keep on local folder. Keep outside of public-web to ensure non authorized people won't enter. Also, chmod this accordingly :)
+if(DEBUG == 1) {
+  $configs_external = include('../signup_config.php'); //Local Test environment (.gitignore doesn't commit this file, but be careful anyways)
+}
+else {
+  $configs_external = include('/home/webmaster/wp-config-files/signup_config.php'); //Set a location of your choosign
+}
 
 //Config the <form> fields name to be retrieved from $_POST
 define('FIRST_NAME',"firstName");

@@ -8,5 +8,8 @@ return array(
     'ur_location' => './model/ur_allocation.php',
     'thank-you-message' => '<h3>Muchas gracias por tu registro, pronto recibiras un correo electónico. E inicia sesion en nuestra  <a href="https://opportunities.aiesec.org/" target="_blank"> plataforma.</a></h3>',
     'country_name' => 'Mexico',
-    'mc_id' => '1589'
+    'mc_id' => '1589',
+    'recaptcha_public_test' => '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
+    'recaptcha_public' => '6Ld8uAkUAAAAAMqyl5rjRbaUSP6CQlGzSAAy1pqZ',
+
 );
