@@ -83,7 +83,7 @@ if( check_captcha() ) {
       $ep_id = null;
 
       //This is supposed to be replaced with thankyou-gv-podio to distinguish only Podio was created after the second try
-      header("Location: http://aiesec.org.mx/registro_no");
+      header("Location: http://aiesec.org.mx/registro_no/?error=expa");
       //If EP was not added to EXPA, then, set redirection script to pending expa sign-up
       //Also, send to Pub/Sub queue to trigger regular functions
     }
@@ -92,20 +92,27 @@ if( check_captcha() ) {
     try {
       addToPodio($product,$ids['podio'],isset($ep_id)?$ep_id:null); //EP ID for future feature of PDY anonymization
     } catch (PodioError $e) {
-      die($e->getMessage());
+      //This needs an extra redirection
+      header("Location: http://aiesec.org.mx/registro_no/?error=podio");
+      //die($e->getMessage());
     } catch(Exception $e) {
       error_log($e->getTrace());
-      die($e->getMessage());
+      header("Location: http://aiesec.org.mx/registro_no");
+      //die($e->getMessage());
     }
+
+    header(getRedirection($product));
   }
   else {
     //We need some way to log this has happened
-    die("Hubo un error al completar los campos. Por favor asegúrese de que todos los datos son correctos e intente de nuevo.");
+    header("Location: http://aiesec.org.mx/registro_no/?error=validation");
+    //die("Hubo un error al completar los campos. Por favor asegúrese de que todos los datos son correctos e intente de nuevo.");
   }
 }
 else {
   //Log this has happened just to verify we have humans trying to acces our resources
-  die("La verificación CAPTCHA falló. Por favor intente de nuevo");
+  header("Location: http://aiesec.org.mx/registro_no/?error=captcha");
+  //die("La verificación CAPTCHA falló. Por favor intente de nuevo");
 }
 
 function checkEmailExistsPodio($app,$email) {
