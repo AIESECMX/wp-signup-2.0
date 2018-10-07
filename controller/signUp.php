@@ -208,7 +208,26 @@ function sendToExpa($lc_id){
       'lc_input' => $lc_id, //Put here EY code
       'lc' => $lc_id,  //Put here EY code
       //'alignment_id' => '', //Put here alignment ID
-      'referral_type' => 'Other' //Put here referral
+      'referral_type' => array(
+        '1' => 'Facebook',
+        '2' => 'Facebook',
+        '3' => 'Search engine',
+        '4' => 'Twitter',
+        '5' => 'Instagram',
+        '6' => 'LinkedIn ',
+        '8' => 'Friend',
+        '9' => 'WeChat',
+        '10' => 'Other social media channel',
+        '11' => 'Information booth on campus ',
+        '12' => 'Event',
+        '13' => 'Media (magazine, TV, newspaper or radio)',
+        '14' => 'Other',
+        '15' => 'Telegram',
+        '16' => 'Vk',
+        '18' => 'Emails',
+        '19' => 'Classroom presentation',
+        '20' => 'Other'
+      ) //Put here referral
     )
   );
 
