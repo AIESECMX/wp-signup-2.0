@@ -1,291 +1,311 @@
-lc_name,state,university,valid_from,allocation_id
-Aguascalientes,Aguascalientes,Universidad Cuauhtémoc Aguascalientes,2018-02-01,
-Aguascalientes,Aguascalientes,Universidad Autónoma de Aguascalientes,2018-02-01,
-Aguascalientes,Aguascalientes,Universidad del Valle de México Aguascalientes,2018-02-01,
-Tijuana,Baja California,CETYS Universidad,2018-02-01,
-Tijuana,Baja California,Tecnológico de Tijuana,2018-02-01,
-Tijuana,Baja California,Universidad Autónoma de Baja California,2018-02-01,
-Tijuana,Baja California,Universidad Iberoamericana Tijuana,2018-02-01,
-Tijuana,Baja California,Universidad Xochicalco,2018-02-01,
-IPN,CDMX,Instituto Politécnico Nacional (Todos los campus CDMX y Edo. de México),2018-02-01,
-IPN,CDMX,Universidad Autónoma Metropolitana (Campus Azcapotzalco),2018-02-01,
-IPN,CDMX,Universidad del Pedregal,2018-02-01,
-IPN,CDMX,Universidad Privada del Estado de México,2018-02-01,
-IPN,CDMX,Universidad Simón Bolivar,2018-02-01,
-IPN,CDMX,Universidad Tecnológica de México (Todos los campus CDMX y Edo. de México),2018-02-01,
-ITAM,CDMX,"Centro de Diseño, Cine y Televisión",2018-02-01,
-ITAM,CDMX,ITAM - Instituto Tecnológico Autónomo de México,2018-02-01,
-ITAM,CDMX,Universidad Anahuac Sur,2018-02-01,
-ITAM,CDMX,Universidad Iberoamericana,2018-02-01,
-ITESM Santa Fe,CDMX,Anáhuac Campus Norte,2018-02-01,
-ITESM Santa Fe,CDMX,CENTRO,2018-02-01,
-ITESM Santa Fe,CDMX,Centro de investigación y docencias económicas,2018-02-01,
-ITESM Santa Fe,CDMX,"Instituo Tecnológico de Estudios Superiores Monterrey, Campus Santa Fe",2018-02-01,
-ITESM Santa Fe,CDMX,Universidad Autónoma de Metropolitana Campus Santa Fe,2018-02-01,
-ITESM Santa Fe,CDMX,Universidad Autónoma Metropolitana (Unidad Cuajimalpa),2018-02-01,
-ITESM Santa Fe,CDMX,Universidad de las américas (UDLA),2018-02-01,
-La Salle,CDMX,Centro Universitario de Publicidad y Periodismo,2018-02-01,
-La Salle,CDMX,Centro Universitario Incarnate World,2018-02-01,
-La Salle,CDMX,CESSA,2018-02-01,
-La Salle,CDMX,Colegio de Imagen Pública,2018-02-01,
-La Salle,CDMX,Universidad CNCI,2018-02-01,
-La Salle,CDMX,Universidad de las Tres Cuturas Campus Nezahualcóyotl,2018-02-01,
-La Salle,CDMX,Universidad de Negocios ISEC,2018-02-01,
-La Salle,CDMX,Universidad La Salle Condesa,2018-02-01,
-La Salle,CDMX,Universidad La Salle Medicina,2018-02-01,
-La Salle,CDMX,Universidad La Salle Nezahualcóyotl,2018-02-01,
-La Salle,CDMX,Universidad Latinoamericana,2018-02-01,
-La Salle,CDMX,Universidad Tecnológica de Nezahualcóyotl,2018-02-01,
-UNAM,CDMX,Claustro de Sor Juana,2018-02-01,
-UNAM,CDMX,Colegio de Ciencias y Humanidades UNAM,2018-02-01,
-UNAM,CDMX,Escuela Nacional Preparatoria UNAM,2018-02-01,
-UNAM,CDMX,Facultad de Artes y Diseño UNAM,2018-02-01,
-UNAM,CDMX,Facultad de Musica UNAM,2018-02-01,
-UNAM,CDMX,"FES UNAM ( Campus: Acatlan, Aragon, Cuautitilan, Iztacala, Zaragoza)",2018-02-01,
-UNAM,CDMX,TAE,2018-02-01,
-UNAM,CDMX,Universidad Autónoma de México Campus Xochimilco (UAM Xochimilco),2018-02-01,
-UNAM,CDMX,Universidad de la Comunicación,2018-02-01,
-UNAM,CDMX,Universidad de las Tres Cuturas Campus Zona Rosa,2018-02-01,
-UNAM,CDMX,Universidad de Londres,2018-02-01,
-UNAM,CDMX,Universidad Nacional Autónoma de México (UNAM),2018-02-01,
-UNAM,CDMX,UTECA,2018-02-01,
-UP,CDMX,Centro De Estudios En Ciencias De La Comunicación,2018-02-01,
-UP,CDMX,Centro Universitario Incarnate Word,2018-02-01,
-UP,CDMX,Instituto Roosevelt,2018-02-01,
-UP,CDMX,UNIVDEP,2018-02-01,
-UP,CDMX,Universidad del Desarrollo Empresarial y Pedagógico,2018-02-01,
-UP,CDMX,Universidad del Valle de México Campus Coyoacán (UVM Coyoacán),2018-02-01,
-UP,CDMX,Universidad Intercontinental,2018-02-01,
-UP,CDMX,Universidad Panamericana,2018-02-01,
-UP,CDMX,Universidad Panamericana (UP),2018-02-01,
-UP,CDMX,Universidad Panamericana Santa Fe (UP Santa Fe),2018-02-01,
-UP,CDMX,UVM Coyoacán,2018-02-01,
-Chiapas,Chiapas,Escuela Bancaria y Comercial Campus Chiapas,2018-02-01,
-Chiapas,Chiapas,IESCH Salazar,2018-02-01,
-Chiapas,Chiapas,Instituto Tecnológico de Estudios Superiores de Monterrey Campus Chiapas (ITESM  Chiapas),2018-02-01,
-Chiapas,Chiapas,Instituto Tecnológico de Tuxtla Gutiérrez,2018-02-01,
-Chiapas,Chiapas,UMV Campus Tuxtla,2018-02-01,
-Chiapas,Chiapas,Universidad Autónoma de Chiapas,2018-02-01,
-Chiapas,Chiapas,Universidad de Ciencias y Artes de Chiapas,2018-02-01,
-Chihuahua,Chihuahua,Instituto Tecnológico de Chihuahua,2018-02-01,
-Chihuahua,Chihuahua,Instituto Tecnológico de Estudios Superiores de Monterrey Campus Chihuahua (ITESM Chihuahua),2018-02-01,
-Chihuahua,Chihuahua,Tec Milenio Chihuahua,2018-02-01,
-Chihuahua,Chihuahua,Universidad Autónoma de Chihuahua,2018-02-01,
-Ciudad Juárez,Chihuahua,Instituto Tecnológico de Ciudad Juárez,2018-02-01,
-Ciudad Juárez,Chihuahua,Instituto Tecnológico de Estudios Superiores de Monterrey Campus Ciudad Juárez (ITESM Ciudad Juárez),2018-02-01,
-Ciudad Juárez,Chihuahua,Tec Milenio Campus Ciudad Juárez,2018-02-01,
-Ciudad Juárez,Chihuahua,Universidad Autónoma de Ciudad Juárez,2018-02-01,
-Ciudad Juárez,Chihuahua,University of Texas at El Paso (UTEP),2018-02-01,
-La Laguna,Coahuila,Instituto Tecnológico de Estudios Superiores de Monterrey Campus Laguna (ITESM Campus Laguna),2018-02-01,
-La Laguna,Coahuila,Instituto Tecnologico de La Laguna,2018-02-01,
-La Laguna,Coahuila,Universidad del Valle de México Laguna,2018-02-01,
-La Laguna,Coahuila,Universidad Iberoamericana Campus Torreón,2018-02-01,
-La Laguna,Coahuila,Universidad La Salle Laguna,2018-02-01,
-La Laguna,Coahuila,Universidad Tecmilenio Laguna,2018-02-01,
-La Laguna,Durango,Universidad Autonoma de Durango (UAD),2018-02-01,
-ITESM CEM,Estado de México,Escuela Bancaria y Comercial Campus Tlalnepantla,2018-02-01,
-ITESM CEM,Estado de México,Instituto Tecnológico de Estudios Superiores de Monterrey Campus (ITESM CCM),2018-02-01,
-ITESM CEM,Estado de México,Instituto Tecnológico de Estudios Superiores de Monterrey Campus Estado de México (ITESM CEM),2018-02-01,
-ITESM CEM,Estado de México,Universidad del Valle de México (UVM Lago de Guadalupe),2018-02-01,
-ITESM CEM,Estado de México,Universidad del Valle de México Lomas Verdes (UVM Lomas Verdes),2018-02-01,
-ITESM CEM,Estado de México,Universidad Motilinia del Pedregal,2018-02-01,
-ITESM Toluca,Estado de México,Instituto Tecnológico de Estudios Superiores de Monterrey Campus Toluca (ITESM Toluca),2018-02-01,
-ITESM Toluca,Estado de México,ITUEM,2018-02-01,
-ITESM Toluca,Estado de México,IUEM,2018-02-01,
-ITESM Toluca,Estado de México,SIglo XXI,2018-02-01,
-ITESM Toluca,Estado de México,Universidad del Valle de México Campus Toluca,2018-02-01,
-ITESM Toluca,Estado de México,Universidad Tecnológica de México Campus Toluca (UNITEC Toluca),2018-02-01,
-UAEMEX,Estado de México,Centro de Estudios Juridicos del Estado de México,2018-02-01,
-UAEMEX,Estado de México,Centro Universitario Ixtlahuaca,2018-02-01,
-UAEMEX,Estado de México,Colegio Mexiquense,2018-02-01,
-UAEMEX,Estado de México,EBC Campus Toluca,2018-02-01,
-UAEMEX,Estado de México,Instituto Franco Inglés de México,2018-02-01,
-UAEMEX,Estado de México,Tecnológico de Jocotitlán,2018-02-01,
-UAEMEX,Estado de México,Tecnológico Regional,2018-02-01,
-UAEMEX,Estado de México,Universidad Autonoma del Estado de México,2018-02-01,
-UAEMEX,Estado de México,Universidad Latinoamericana (ULA),2018-02-01,
-UAEMEX,Estado de México,Universidad Univer Milenium,2018-02-01,
-UAEMEX,Estado de México,UVT,2018-02-01,
-Celaya,Guanajuato,Instituto Tecnologico de Celaya,2018-02-01,
-Celaya,Guanajuato,Speaks,2018-02-01,
-Celaya,Guanajuato,UNITESBA,2018-02-01,
-Celaya,Guanajuato,Univerisidad Benavente,2018-02-01,
-Celaya,Guanajuato,Universidad Continente Americano (Celaya),2018-02-01,
-Celaya,Guanajuato,Universidad de Celaya,2018-02-01,
-Celaya,Guanajuato,Universidad de Guanajuato campus Celaya/Salvatierra,2018-02-01,
-Celaya,Guanajuato,Universidad Latina de México (Celaya).,2018-02-01,
-Celaya,Guanajuato,Universidad Politecnica de Guanajuato,2018-02-01,
-Celaya,Guanajuato,Universidad Tecnológica del Centro de México (Celaya),2018-02-01,
-Guanajuato,Guanajuato,CIMAT,2018-02-01,
-Guanajuato,Guanajuato,Escuela Normal Superior Oficial de Guanajuato,2018-02-01,
-Guanajuato,Guanajuato,ITESG,2018-02-01,
-Guanajuato,Guanajuato,Universidad de Guanajuato (Campus Guanajuato),2018-02-01,
-Guanajuato,Guanajuato,Universidad de León (Campus Guanajuato),2018-02-01,
-Guanajuato,Guanajuato,Universidad Santa Fe,2018-02-01,
-Irapuato,Guanajuato,DICIVA/DICIS,2018-02-01,
-Irapuato,Guanajuato,Instituto Irapuato.,2018-02-01,
-Irapuato,Guanajuato,Instituto Tecnológico de Estudios Superiores de Monterrey Campus Irapuato. (ITESM Irapuato),2018-02-01,
-Irapuato,Guanajuato,ITESI.,2018-02-01,
-León,Guanajuato,Colegio Miraflores,2018-02-01,
-León,Guanajuato,ENES UNAM León,2018-02-01,
-León,Guanajuato,EPCA,2018-02-01,
-León,Guanajuato,Escuela Bancaria y Comercial Campus León (EBC León),2018-02-01,
-León,Guanajuato,Escuela Normal Superior Oficial,2018-02-01,
-León,Guanajuato,Instituto Lux,2018-02-01,
-León,Guanajuato,Instituto Politecnico Nacional Campus Guanajuato (IPN-UPIIG),2018-02-01,
-León,Guanajuato,Instituto Tecnologico de León (ITL),2018-02-01,
-León,Guanajuato,Instituto Tecnologico de Monterrey Campus León (ITESM),2018-02-01,
-León,Guanajuato,UNIVA,2018-02-01,
-León,Guanajuato,Universidad de Guanajuato Campus León,2018-02-01,
-León,Guanajuato,Universidad de la Salle Bajio,2018-02-01,
-León,Guanajuato,Universidad del Valle de México Campus León (UVM León),2018-02-01,
-León,Guanajuato,Universidad Iberoamericana Campus León (IBERO León),2018-02-01,
-León,Guanajuato,Universidad Tecnologica de León (UTL),2018-02-01,
-León,Guanajuato,Universidad Tecnológica de México Campus León (UNITEC León),2018-02-01,
-Guadalajara,Jalisco,Instituto Tecnológico de Estudios Superiores de Monterrey Campus Guadalajara (ITESM Guadalajara),2018-02-01,
-Guadalajara,Jalisco,Instituto Tecnológico de Estudios Superiores de Occidente (ITESO),2018-02-01,
-Guadalajara,Jalisco,Universidad Autónoma de Guadalajara,2018-02-01,
-Guadalajara,Jalisco,Universidad de Guadalajara (UdG),2018-02-01,
-Guadalajara,Jalisco,Universidad Marista de Guadalajara,2018-02-01,
-Guadalajara,Jalisco,Universidad Panamericana Guadalajara (UP Campus Guadalajara),2018-02-01,
-Guadalajara,Jalisco,Universidad Tecmilenio (Guadalajara),2018-02-01,
-Michoacán,Michoacán,American Port Institute,2018-02-01,
-Michoacán,Michoacán,Instituto Jefferson Internacional,2018-02-01,
-Michoacán,Michoacán,Instituto Tecnlógico de Morelia,2018-02-01,
-Michoacán,Michoacán,Tecnológico de Monterrey Campus Morelia,2018-02-01,
-Michoacán,Michoacán,Universidad La Salle Morelia,2018-02-01,
-Michoacán,Michoacán,Universidad Latinoamericana (Michoacán),2018-02-01,
-Morelos,Morelos,Instituto Tecnológico de Estudios Superiores Monterrey Campus Cuernavaca  (ITESM Cuernavaca),2018-02-01,
-Morelos,Morelos,Tecmilenio Campus Cuernavaca,2018-02-01,
-Morelos,Morelos,Universidad Autónoma del Estado de Morelos,2018-02-01,
-Morelos,Morelos,Universidad La Salle Campus Cuernavaca,2018-02-01,
-Morelos,Morelos,Universidad Politécnica del Estado de Morelos,2018-02-01,
-Morelos,Morelos,Universidad Tecnológica de Emiliano Zapata,2018-02-01,
-Nayarit,Nayarit,Instituto Tecnológico de Tepic,2018-02-01,
-Nayarit,Nayarit,Universidad Autónoma de Nayarit,2018-02-01,
-Nayarit,Nayarit,Universidad del Valle de Matatipac,2018-02-01,
-Nayarit,Nayarit,Universidad Tecnológica de Nayarit,2018-02-01,
-ITESM Monterrey,Nuevo León,Centro de Estudios Superiores de Diseño de Monterrey,2018-02-01,
-ITESM Monterrey,Nuevo León,Instituto Tecnológico de Estudios Superiores de Monterrey (ITESM Campus Mty),2018-02-01,
-ITESM Monterrey,Nuevo León,U-ERRE,2018-02-01,
-ITESM Monterrey,Nuevo León,Universidad Autónoma de Nuevo Léon Campus Ciencias Agropecuarias,2018-02-01,
-ITESM Monterrey,Nuevo León,Universidad Autónoma de Nuevo León Campus Ciudad Univesitaria,2018-02-01,
-ITESM Monterrey,Nuevo León,Universidad Autónoma de Nuevo León Campus Mederos,2018-02-01,
-UDEM,Nuevo León,Universidad Autónoma de Nuevo León Facultad de Medicina,2018-02-01,
-UDEM,Nuevo León,Universidad de Monterrey,2018-02-01,
-UDEM,Nuevo León,Universidad de Monterrey (UDEM),2018-02-01,
-UDEM,Nuevo León,Universidad del Valle de México (UVM) Campus Monterrey,2018-02-01,
-UDEM,Nuevo León,Universidad Tecmilenio (Nuevo León),2018-02-01,
-Oaxaca,Oaxaca,Instituto Tecnologico de Oaxaca,2018-02-01,
-Oaxaca,Oaxaca,Universidad Anahuac,2018-02-01,
-Oaxaca,Oaxaca,Universidad Tecnológica de la Mixteca,2018-02-01,
-Oaxaca,Oaxaca,Universidad Autonoma Benito Juarez de Oaxaca,2018-02-01,
-Oaxaca,Oaxaca,Universidad La Salle Oaxaca,2018-02-01,
-Oaxaca,Oaxaca,Universidad Regional del Sureste,2018-02-01,
-Oaxaca,Oaxaca,Universidad Tecnologica de los Valles Centrales de Oaxaca,2018-02-01,
-Puebla,Puebla,Benemérita Universidad Autónoma de Puebla (BUAP),2018-02-01,
-Puebla,Puebla,Ibero Puebla,2018-02-01,
-Puebla,Puebla,Instituto Tecnológico de Estudios Superiores de Monterrey Campus (ITESM Puebla),2018-02-01,
-Puebla,Puebla,Interamericana,2018-02-01,
-Puebla,Puebla,Universidad Anáhuac Puebla,2018-02-01,
-Puebla,Puebla,Universidad de las Américas Puebla,2018-02-01,
-Puebla,Puebla,Universidad del Valle de México  Campus Puebla,2018-02-01,
-Puebla,Puebla,UPAEP,2018-02-01,
-Puebla,Puebla,UVP,2018-02-01,
-Querétaro,Querétaro,Escuela Bancaria y Comercial Campus Querétaro (EBC Querétaro),2018-02-01,
-Querétaro,Querétaro,Instituto Tecnológico de Estudios Superiores de Monterrey Campus Querétaro (ITESM Querétaro),2018-02-01,
-Querétaro,Querétaro,Instituto Tecnológico de Querétaro,2018-02-01,
-Querétaro,Querétaro,UNEA,2018-02-01,
-Querétaro,Querétaro,Universidad Autónoma de Querétaro,2018-02-01,
-Querétaro,Querétaro,Universidad Cuauhtemoc de Queretaro,2018-02-01,
-Querétaro,Querétaro,Universidad del Valle de México Campus Querétaro (UVM Querétaro),2018-02-01,
-Querétaro,Querétaro,Universidad Mondragón,2018-02-01,
-Querétaro,Querétaro,Universidad Politecnica de Santa Rosa Jauregui,2018-02-01,
-Querétaro,Querétaro,Universidad Tecnologica de San Juan del Río,2018-02-01,
-Los Mochis,Sinaloa,Instituto Tecnologico de Los Mochis (ITLM),2018-02-01,
-Los Mochis,Sinaloa,Universidad Autonoma de Durango (UAD) campus Los Mochis,2018-02-01,
-Los Mochis,Sinaloa,Universidad Autonoma de Sinaloa Unidad Los Mochis (UAS),2018-02-01,
-Los Mochis,Sinaloa,Universidad de Occidente Unidad Los Mochis (UdeO),2018-02-01,
-Los Mochis,Sinaloa,Universidad del Valle del Fuerte (UNIVAFU),2018-02-01,
-Sinaloa,Sinaloa,Instituto Tecnológico de Culiacán,2018-02-01,
-Sinaloa,Sinaloa,Instituto Tecnológico de Estudios Superiores de Monterrey Campus (ITESM Sinaloa),2018-02-01,
-Sinaloa,Sinaloa,Universidad Autónoma de Sinaloa,2018-02-01,
-Sinaloa,Sinaloa,Universidad de Occidente,2018-02-01,
-Sinaloa,Sinaloa,Universidad Tecmilenio (Sinaloa),2018-02-01,
-Sinaloa,Sinaloa,Universidad Tecnológica de Culiacán,2018-02-01,
-Ciudad Obregón,Sonora,Instituto Tecnológico de Sonora,2018-02-01,
-Ciudad Obregón,Sonora,Instituto Tecnológico Superior de Cajeme,2018-02-01,
-Ciudad Obregón,Sonora,Universidad de Sonora (campus Ciudad Obregón),2018-02-01,
-Ciudad Obregón,Sonora,Universidad La Salle Noroeste,2018-02-01,
-Sonora,Sonora,Instituto Tecnológico de Estudios Superiores de Monterrey Campus Sonora Norte,2018-02-01,
-Sonora,Sonora,Instituto Tecnológico de Hermosillo,2018-02-01,
-Sonora,Sonora,Tec MIlenio Campus Hermosillo,2018-02-01,
-Sonora,Sonora,UNILIDER,2018-02-01,
-Sonora,Sonora,Universidad de Sonora (campus Hermosillo),2018-02-01,
-Sonora,Sonora,Universidad del Valle de México Campus Hermosillo (UVM Hermosillo),2018-02-01,
-Sonora,Sonora,Universidad Durango Santander,2018-02-01,
-Sonora,Sonora,Universidad Estatal de Sonora,2018-02-01,
-Sonora,Sonora,Universidad Kino,2018-02-01,
-Sonora,Sonora,Universidad Tecnológica de Hermosillo,2018-02-01,
-Sonora,Sonora,Vizcaya de las Americas,2018-02-01,
-Tabasco,Tabasco,Escuela Normal de Educación,2018-02-01,
-Tabasco,Tabasco,Instituto Tecnológico de Villahermosa,2018-02-01,
-Tabasco,Tabasco,Universidad Autónoma de Guadalajara Campus Tabasco,2018-02-01,
-Tabasco,Tabasco,Universidad del Valle de México Campus Villahermosa,2018-02-01,
-Tabasco,Tabasco,Universidad Juárez Autónoma de Tabasco,2018-02-01,
-Tabasco,Tabasco,Universidad Olmeca,2018-02-01,
-Tabasco,Tabasco,Universidad TecMilenio Campus Villahermosa,2018-02-01,
-Tabasco,Tabasco,Universidad Tecnológica de Tabasco,2018-02-01,
-Tampico,Tamaulipas,Instituto de Ciencias y Estudios Superiores de Tamaulipas (ICEST),2018-02-01,
-Tampico,Tamaulipas,Instituto de Estudios Superiores de Tamaulipas (IEST Anáhuac),2018-02-01,
-Tampico,Tamaulipas,Instituto Tecnológico de Cd. Madero,2018-02-01,
-Tampico,Tamaulipas,"Instituto Tecnológico de Estudios Superiores de Monterrey, Campus Tampico (ITESM Tampico)",2018-02-01,
-Tampico,Tamaulipas,"Universidad Autónoma de Tamaulipas, Campus Tampico (UAT)",2018-02-01,
-Tampico,Tamaulipas,Universidad Del Noreste (UNE),2018-02-01,
-Poza Rica,Veracruz,Instituto Tecnológico Superior de Gutierrez Zamora,2018-02-01,
-Poza Rica,Veracruz,Instituto Tecnológico Superior de Poza Rica,2018-02-01,
-Poza Rica,Veracruz,Instituto Tecnológico Superior de Poza Rica ext. Cerro Azul,2018-02-01,
-Poza Rica,Veracruz,Instituto Tecnológico Superior de Poza Rica ext. Tihuatlan,2018-02-01,
-Poza Rica,Veracruz,Universidad de Oriente,2018-02-01,
-Poza Rica,Veracruz,Universidad del Golfo de México,2018-02-01,
-Poza Rica,Veracruz,Universidad del Valle de México (Poza Rica),2018-02-01,
-Poza Rica,Veracruz,Universidad Huasteca Veracruzana,2018-02-01,
-Poza Rica,Veracruz,Universidad Pedagogica Nacional,2018-02-01,
-Poza Rica,Veracruz,Universidad Veracruzana (Poza Rica),2018-02-01,
-Veracruz,Veracruz,Benemérita Escuela Normal Veracruzana Enrique C. Rebsamen,2018-02-01,
-Veracruz,Veracruz,Centro de Estudios Gestalt,2018-02-01,
-Veracruz,Veracruz,Instituto Culinario de Veracruz (ICUVER) Region Xalapa - Veracruz Puerto,2018-02-01,
-Veracruz,Veracruz,Instituto Educativo Panamericano,2018-02-01,
-Veracruz,Veracruz,Instituto tecnológic de Veracruz,2018-02-01,
-Veracruz,Veracruz,Instituto Tecnológico de Estudios Superiores de Monterrey Campus  Córdoba (ITESM Córdoba),2018-02-01,
-Veracruz,Veracruz,Instituto Tecnológico Superior de Alvarado,2018-02-01,
-Veracruz,Veracruz,Instituto Tecnológico Superior de Xalapa,2018-02-01,
-Veracruz,Veracruz,Universidad Anahuac Xalapa,2018-02-01,
-Veracruz,Veracruz,Universidad Autónoma de Veracruz Villa Rica,2018-02-01,
-Veracruz,Veracruz,Universidad Cristóbal Colón (UCC),2018-02-01,
-Veracruz,Veracruz,Universidad de América Latina,2018-02-01,
-Veracruz,Veracruz,Universidad de Turismo,2018-02-01,
-Veracruz,Veracruz,Universidad de Xalapa (UX),2018-02-01,
-Veracruz,Veracruz,Universidad del Golfo de México (UGM) Región Xalapa,2018-02-01,
-Veracruz,Veracruz,Universidad del Valle de México Campus Veracruz (UVM Veracruz),2018-02-01,
-Veracruz,Veracruz,Universidad Euro Hispanoamericana,2018-02-01,
-Veracruz,Veracruz,Universidad Gestalt de Diseño,2018-02-01,
-Veracruz,Veracruz,Universidad IVES,2018-02-01,
-Veracruz,Veracruz,Universidad Tecmilenio (Veracruz),2018-02-01,
-Veracruz,Veracruz,Universidad Veracruzana (Región Boca del Rio),2018-02-01,
-Veracruz,Veracruz,Universidad Veracruzana (Región Coatzacoalcos-Minatitlan),2018-02-01,
-Veracruz,Veracruz,Universidad Veracruzana (Región Cordoba-Orizaba),2018-02-01,
-Veracruz,Veracruz,Universidad Veracruzana (Región Veracruz Puerto),2018-02-01,
-Veracruz,Veracruz,Universidad Veracruzana (Region Xalapa),2018-02-01,
-Veracruz,Veracruz,Universidad Veracruzana (Región Xalapa),2018-02-01,
-Yucatán,Yucatán,Universidad Anahuác Mayab,2018-02-01,
-Yucatán,Yucatán,Universidad Autónoma de Yucatan,2018-02-01,
-Yucatán,Yucatán,Universidad Interamericana para el Desarrollo,2018-02-01,
-Yucatán,Yucatán,Universidad Marista,2018-02-01,
-Zacatecas,Zacatecas,Instituto Tecnológico de Zacatecas ITZ,2018-02-01,
-Zacatecas,Zacatecas,Tecnológico de Monterrey Campus Zacatecas,2018-02-01,
-Zacatecas,Zacatecas,Universidad Autónoma de Durango Campus Zacatecas,2018-02-01,
-Zacatecas,Zacatecas,Universidad Autónoma de Zacatecas,2018-02-01,
-Zacatecas,Zacatecas,Universidad de la Vera-Cruz Campus Zacatecas,2018-02-01,
-Zacatecas,Zacatecas,Universidad Interamericana para el Desarrollos Campus Zacatecas,2018-02-01,
-Zacatecas,Zacatecas,Universidad Tecnológica del Estado de Zacatecas UTEZ,2018-02-01,
+lc_name,state,university,valid_from
+Aguascalientes,Aguascalientes,Universidad Cuauhtémoc Aguascalientes,2019-02-01
+Aguascalientes,Aguascalientes,Prepa Tec,2019-02-01
+Aguascalientes,Aguascalientes,UCA,2019-02-01
+Aguascalientes,Aguascalientes,Instituto Tecnológico de Monterrey Campus Aguascalientes,2019-02-01
+Aguascalientes,Aguascalientes,Otra Universidad,2019-02-01
+Aguascalientes,Aguascalientes,UP,2019-02-01
+Aguascalientes,Aguascalientes,Universidad Autónoma de Aguascalientes,2019-02-01
+Aguascalientes,Aguascalientes,Universidad del Valle de México Aguascalientes,2019-02-01
+Tijuana,Baja California,Universidad Autónoma de Baja California,2019-02-01
+Tijuana,Baja California,CETYS Universidad,2019-02-01
+Tijuana,Baja California,Universidad Iberoamericana Tijuana,2019-02-01
+Tijuana,Baja California,Otra Universidad,2019-02-01
+Tijuana,Baja California,Universidad Xochicalco ,2019-02-01
+Tijuana,Baja California,Tecnológico de Tijuana ,2019-02-01
+Tijuana,Baja California Sur,Todas las Universidades,2019-02-01
+Yucatán,Campeche,Todas las Universidades,2019-02-01
+IPN,CDMX,Instituto Politécnico Nacional (Todos los campus CDMX y Edo. de México),2019-02-01
+IPN,CDMX,UNITEC (Todos los campus CDMX y Edo. de México),2019-02-01
+IPN,CDMX,UAM Azcapotzalco,2019-02-01
+IPN,CDMX,Claustro de Sor Juana,2019-02-01
+ITAM,CDMX,ITAM - Instituto Tecnológico Autónomo de México,2019-02-01
+ITAM,CDMX,Universidad Iberoamericana,2019-02-01
+ITAM,CDMX,Universidad Anáhuac Sur,2019-02-01
+ITAM,CDMX,Universidad Anáhuac Norte,2019-02-01
+ITAM,CDMX,CESSA,2019-02-01
+Tec CEM,CDMX,Universidad Latinoamericana ,2019-02-01
+Tec Santa Fe,CDMX,ITESM Santa fe,2019-02-01
+Tec Santa Fe,CDMX,Anáhuac Campus Norte,2019-02-01
+Tec Santa Fe,CDMX,Anáhuac Campus Sur,2019-02-01
+Tec Santa Fe,CDMX,ITESM CCM,2019-02-01
+Tec Santa Fe,CDMX,UAM Campus Santa Fe,2019-02-01
+Tec Santa Fe,CDMX,UAM Campus Cuajimalpa),2019-02-01
+Tec Santa Fe,CDMX,Centro de investigación y docencias económicas,2019-02-01
+Tec Santa Fe,CDMX,CENTRO,2019-02-01
+La Salle,CDMX,Universidad de las Tres Culturas,2019-02-01
+La Salle,CDMX,Universidad Tecnológica de Nezahualcóyotl,2019-02-01
+La Salle,CDMX,EBC Ciudad de México,2019-02-01
+La Salle,CDMX,Universidad Simón Bolivar,2019-02-01
+La Salle,CDMX,Centro Universitario de Publicidad y Periodismo ,2019-02-01
+La Salle,CDMX,Universidad de las Américas (UDLA),2019-02-01
+La Salle,CDMX,Universidad CNCI,2019-02-01
+La Salle,CDMX,Universidad La Salle (Todos los campus CDMX),2019-02-01
+La Salle,CDMX,Universidad de Londres,2019-02-01
+La Salle,CDMX,Centro Universitario Incarnate World ,2019-02-01
+La Salle,CDMX,Universidad de Negocios ISEC,2019-02-01
+La Salle,CDMX,Colegio de Imagen Pública,2019-02-01
+UNAM,CDMX,UNAM,2019-02-01
+UNAM,CDMX,Preparatoria UNAM ,2019-02-01
+UNAM,CDMX,Universidad del Pedregal ,2019-02-01
+UNAM,CDMX,UAM Xochimilco,2019-02-01
+UNAM,CDMX,Universidad Motolinia del Pedregal ,2019-02-01
+UNAM,CDMX,FES UNAM (Todos los campus),2019-02-01
+UNAM,CDMX,UTECA,2019-02-01
+UNAM,CDMX,Universidad de la Comunicación,2019-02-01
+UP,CDMX,CECC,2019-02-01
+UP,CDMX,Universidad Intercontinental,2019-02-01
+UP,CDMX,Universidad Panamericana (UP),2019-02-01
+UP,CDMX,UVM Coyoacán,2019-02-01
+UP,CDMX,UNIVDEP,2019-02-01
+UP,CDMX,Universidad del Desarrollo Empresarial y Pedagógico,2019-02-01
+Chiapas,Chiapas,Universidad Autónoma de Chiapas,2019-02-01
+Chiapas,Chiapas,Instituto Tecnológico de Tuxtla Gutiérrez,2019-02-01
+Chiapas,Chiapas,Escuela Bancaria y Comercial Campus Chiapas,2019-02-01
+Chiapas,Chiapas,ITESM  Chiapas,2019-02-01
+Chiapas,Chiapas,Otra Universidad,2019-02-01
+Chiapas,Chiapas,UVM Campus Tuxtla,2019-02-01
+Chiapas,Chiapas,IESCH Salazar,2019-02-01
+Chiapas,Chiapas,Universidad de Ciencias y Artes de Chiapas,2019-02-01
+Chihuahua,Chihuahua,Universidad Autónoma de Chihuahua ,2019-02-01
+Chihuahua,Chihuahua,Instituto Tecnológico de Estudios Superiores de Monterrey Campus Chihuahua (ITESM Chihuahua),2019-02-01
+Chihuahua,Chihuahua,Otra Universidad,2019-02-01
+Chihuahua,Chihuahua,Instituto Tecnológico de Chihuahua ,2019-02-01
+Chihuahua,Chihuahua,Tec Milenio,2019-02-01
+Chihuahua,Chihuahua,Instituto Universitario de Ciencias y Humanidades,2019-02-01
+Ciudad Juárez,Chihuahua,Universidad Autónoma de Ciudad Juárez,2019-02-01
+Ciudad Juárez,Chihuahua,Instituto Tecnológico de Ciudad Juárez,2019-02-01
+Ciudad Juárez,Chihuahua,Tec Milenio Campus Ciudad Juárez,2019-02-01
+Ciudad Juárez,Chihuahua,ITESM Ciudad Juárez,2019-02-01
+Ciudad Juárez,Chihuahua,University of Texas El Paso (UTEP),2019-02-01
+La Laguna,Coahuila,Universidad La Salle Laguna,2019-02-01
+La Laguna,Coahuila,Instituto Tecnológico de La Laguna,2019-02-01
+La Laguna,Coahuila,Otra Universidad,2019-02-01
+La Laguna,Coahuila,Universidad Tecmilenio Laguna,2019-02-01
+La Laguna,Coahuila,ITESM Campus Laguna,2019-02-01
+La Laguna,Coahuila,Universidad Iberoamericana Campus Torreón,2019-02-01
+La Laguna,Coahuila,Universidad Autónoma de Coahuila,2019-02-01
+La Laguna,Coahuila,UVM Laguna,2019-02-01
+Querétaro,Colima,Todas las Universidades,2019-02-01
+La Laguna,Durango,Universidad Autonoma de Durango (UAD),2019-02-01
+La Laguna,Durango,Otra Universidad,2019-02-01
+Tec CEM,Estado de México,ITESM CEM,2019-02-01
+Tec CEM,Estado de México,EBC Tlalnepantla ,2019-02-01
+Tec CEM,Estado de México,UVM Lomas Verdes,2019-02-01
+Tec CEM,Estado de México,UVM Lago de Guadalupe,2019-02-01
+Tec CEM,Estado de México,Tecmilenio Campus Cuautitlán Izcalli,2019-02-01
+Tec Toluca,Estado de México,Siglo XXI,2019-02-01
+Tec Toluca,Estado de México,ITESM Toluca,2019-02-01
+Tec Toluca,Estado de México,IUEM ,2019-02-01
+Tec Toluca,Estado de México,Universidad del Valle de México Campus Toluca,2019-02-01
+Tec Toluca,Estado de México,ITUEM,2019-02-01
+Tec Toluca,Estado de México,TecMilenio,2019-02-01
+Tec Toluca,Estado de México,UMIN,2019-02-01
+UAEMEX,Estado de México,Tecnológico Regional,2019-02-01
+UAEMEX,Estado de México,EBC Toluca,2019-02-01
+UAEMEX,Estado de México,"Instituto Franco Inglés de México 
+",2019-02-01
+UAEMEX,Estado de México,Universidad Autonoma del Estado de México,2019-02-01
+UAEMEX,Estado de México,Universidad Latinoamericana Metepec,2019-02-01
+UAEMEX,Estado de México,Tecnológico de Jocotitlán,2019-02-01
+UAEMEX,Estado de México,UVT ,2019-02-01
+UAEMEX,Estado de México,Universidad Univer Milenium ,2019-02-01
+UAEMEX,Estado de México,Colegio Mexiquense,2019-02-01
+UAEMEX,Estado de México,Centro Universitario Ixtlahuaca,2019-02-01
+UAEMEX,Estado de México,Instituto Tecnológico de Toluca,2019-02-01
+Celaya,Guanajuato,UG (Campus Celaya/Salvatierra),2019-02-01
+Celaya,Guanajuato,Instituto Tecnológico de Celaya,2019-02-01
+Celaya,Guanajuato,Universidad de Celaya,2019-02-01
+Celaya,Guanajuato,Univerisidad Benavente,2019-02-01
+Celaya,Guanajuato,Speaks,2019-02-01
+Celaya,Guanajuato,Universidad Latina de México (Celaya).,2019-02-01
+Celaya,Guanajuato,UNITESBA,2019-02-01
+Celaya,Guanajuato,Universidad Continente Americano (Celaya),2019-02-01
+Celaya,Guanajuato,Universidad Tecnológica del Centro de México (Celaya),2019-02-01
+Celaya,Guanajuato,Universidad Politécnica de Guanajuato,2019-02-01
+Celaya,Guanajuato,Colegio Arturo Rosenblueth,2019-02-01
+Guanajuato,Guanajuato,UG (Campus Guanajuato),2019-02-01
+Guanajuato,Guanajuato,Universidad Santa fe,2019-02-01
+Guanajuato,Guanajuato,Escuela Normal Superior Oficial de Guanajuato,2019-02-01
+Guanajuato,Guanajuato,Universidad de León (Campus Guanajuato),2019-02-01
+Guanajuato,Guanajuato,ITESG,2019-02-01
+Guanajuato,Guanajuato,CIMAT,2019-02-01
+Irapuato,Guanajuato,ITESI,2019-02-01
+Irapuato,Guanajuato,Instituto Irapuato,2019-02-01
+Irapuato,Guanajuato,Incarnate Word IUW Campus Bajío,2019-02-01
+Irapuato,Guanajuato,Universidad Quetzalcóatl de Irapuato,2019-02-01
+Irapuato,Guanajuato,UG (Campus Irapuato/Salamanca),2019-02-01
+Irapuato,Guanajuato,ITESM Irapuato,2019-02-01
+León,Guanajuato,UG (Campus León),2019-02-01
+León,Guanajuato,IPN (Campus Guanajuato),2019-02-01
+León,Guanajuato,Universidad Tecnológica de León,2019-02-01
+León,Guanajuato,Instituto Tecnológico de León,2019-02-01
+León,Guanajuato,ITESM León,2019-02-01
+León,Guanajuato,Universidad de la Salle Bajío,2019-02-01
+León,Guanajuato,EBC León,2019-02-01
+León,Guanajuato,ENES UNAM León,2019-02-01
+León,Guanajuato,Universidad Iberoamericana Campus León,2019-02-01
+León,Guanajuato,EPCA,2019-02-01
+León,Guanajuato,UNIVA León,2019-02-01
+León,Guanajuato,Universidad del Valle de México Campus León,2019-02-01
+León,Guanajuato,UNITEC Campus León,2019-02-01
+Morelos,Guerrero,Todas las Universidades,2019-02-01
+Tec Toluca,Hidalgo,Todas las Universidades,2019-02-01
+Guadalajara,Jalisco,Instituto Tecnológico de Estudios Superiores de Occidente (ITESO),2019-02-01
+Guadalajara,Jalisco,Universidad de Guadalajara (UdG),2019-02-01
+Guadalajara,Jalisco,ITESM Guadalajara,2019-02-01
+Guadalajara,Jalisco,Universidad Marista de Guadalajara,2019-02-01
+Guadalajara,Jalisco,Otra Universidad,2019-02-01
+Guadalajara,Jalisco,Universidad Panamericana Guadalajara,2019-02-01
+Guadalajara,Jalisco,UNITEC,2019-02-01
+Guadalajara,Jalisco,Universidad del Valle de Atemajac (UNIVA),2019-02-01
+Guadalajara,Jalisco,Universidad Tecmilenio,2019-02-01
+Guadalajara,Jalisco,Universidad Autónoma de Guadalajara,2019-02-01
+Michoacán,Michoacán,Instituto Tecnlógico de Morelia (ITM),2019-02-01
+Michoacán,Michoacán,Universidad Latina de América (UNLA) (MORELIA),2019-02-01
+Michoacán,Michoacán,Universidad La Salle Morelia,2019-02-01
+Michoacán,Michoacán,ITESM Morelia,2019-02-01
+Michoacán,Michoacán,American Port Institute,2019-02-01
+Michoacán,Michoacán,Universidad Latina de América (UNLA),2019-02-01
+Michoacán,Michoacán,Otra Universidad,2019-02-01
+Michoacán,Michoacán,Universidad de Morelia (UDEM),2019-02-01
+Michoacán,Michoacán,Universidad Vasco de Quiroga (UVAQ) (MORELIA),2019-02-01
+Michoacán,Michoacán,Universidad michoacana de san nicolas de hidalgo (UMSNH) (MORELIA),2019-02-01
+Michoacán,Michoacán,Universidad Interamericana para el Desarrollo (UNID) (MORELIA),2019-02-01
+Michoacán,Michoacán,Escuela Nacional de Estudios Superiores Unidad Morelia (ENES) (MORELIA),2019-02-01
+Morelos,Morelos,Universidad Politécnica del Estado de Morelos,2019-02-01
+Morelos,Morelos,Universidad Tecnológica de Emiliano Zapata,2019-02-01
+Morelos,Morelos,Universidad La Salle Cuernavaca,2019-02-01
+Morelos,Morelos,Otra Universidad,2019-02-01
+Morelos,Morelos,ITESM Cuernavaca,2019-02-01
+Morelos,Morelos,Universidad Autónoma del Estado de Morelos,2019-02-01
+Morelos,Morelos,Tec Milenio Cuernavaca,2019-02-01
+Nayarit,Nayarit,Instituto Tecnológico de Tepic,2019-02-01
+Nayarit,Nayarit,Universidad Autónoma de Nayarit,2019-02-01
+Nayarit,Nayarit,Universidad Tecnológica de Nayarit,2019-02-01
+Nayarit,Nayarit,Otra Universidad,2019-02-01
+Nayarit,Nayarit,Universidad del Valle de Matatipac,2019-02-01
+Tec Monterrey,Nuevo León,UANL Ciudad Univesitaria,2019-02-01
+Tec Monterrey,Nuevo León,UANL Campus Mederos,2019-02-01
+Tec Monterrey,Nuevo León,ITESM Monterrey,2019-02-01
+Tec Monterrey,Nuevo León,U-ERRE,2019-02-01
+Tec Monterrey,Nuevo León,UANL Campus Ciencias Agropecuarias,2019-02-01
+UDEM,Nuevo León,Universidad de Monterrey,2019-02-01
+UDEM,Nuevo León,Universidad Tecmilenio,2019-02-01
+UDEM,Nuevo León,CEDIM,2019-02-01
+UDEM,Nuevo León,Universidad del Valle de México Campus Monterrey,2019-02-01
+UDEM,Nuevo León,Universidad de Creatividad e Innovación Humana (CREA),2019-02-01
+UDEM,Nuevo León,UANL Facultad de Medicina,2019-02-01
+Oaxaca,Oaxaca,Universidad Regional del Sureste,2019-02-01
+Oaxaca,Oaxaca,Universidad La Salle Oaxaca,2019-02-01
+Oaxaca,Oaxaca,Instituto Tecnologico de Oaxaca,2019-02-01
+Oaxaca,Oaxaca,Universidad Autonoma Benito Juarez de Oaxaca,2019-02-01
+Oaxaca,Oaxaca,Otra Universidad,2019-02-01
+Oaxaca,Oaxaca,Universidad Tecnológica de la Sierra Sur de Oaxaca (UTSSO),2019-02-01
+Oaxaca,Oaxaca,Universidad Anáhuac,2019-02-01
+Oaxaca,Oaxaca,UMAR,2019-02-01
+Oaxaca,Oaxaca,UTVCO,2019-02-01
+Oaxaca,Oaxaca,UTM,2019-02-01
+Oaxaca,Oaxaca,UNIVAS,2019-02-01
+Puebla,Puebla,Benemérita Universidad Autónoma de Puebla (BUAP),2019-02-01
+Puebla,Puebla,Universidad de las Américas Puebla,2019-02-01
+Puebla,Puebla,ITESM Puebla,2019-02-01
+Puebla,Puebla,Universidad Anáhuac Puebla,2019-02-01
+Puebla,Puebla,UPAEP,2019-02-01
+Puebla,Puebla,UVM Campus Puebla,2019-02-01
+Puebla,Puebla,UVP ,2019-02-01
+Puebla,Puebla,Interamericana ,2019-02-01
+Puebla,Puebla,IBERO Puebla,2019-02-01
+Querétaro,Querétaro,Universidad Politécnica de Querétaro,2019-02-01
+Querétaro,Querétaro,Universidad Autónoma de Querétaro,2019-02-01
+Querétaro,Querétaro,UVM Querétaro,2019-02-01
+Querétaro,Querétaro,UNEA,2019-02-01
+Querétaro,Querétaro,Centro Educativo Anderson S.C,2019-02-01
+Querétaro,Querétaro,Instituto Tecnológico de Querétaro,2019-02-01
+Querétaro,Querétaro,Universidad Politécnica de Santa Rosa Jauregui,2019-02-01
+Querétaro,Querétaro,Universidad Tecnológica de San Juan del Río,2019-02-01
+Querétaro,Querétaro,EBC Querétaro,2019-02-01
+Querétaro,Querétaro,Universidad Mondragón,2019-02-01
+Querétaro,Querétaro,ITESM Querétaro,2019-02-01
+Querétaro,Querétaro,Universidad Tecnológica de Querétaro,2019-02-01
+Yucatán,Quintana Roo,Todas las Universidades,2019-02-01
+León,San Luis Potosí,Todas las Universidades,2019-02-01
+Los Mochis,Sinaloa,Universidad Autonoma de Durango (UAD),2019-02-01
+Los Mochis,Sinaloa,Universidad Autonoma de Sinaloa Unidad Los Mochis (UAS),2019-02-01
+Los Mochis,Sinaloa,Universidad de Occidente Unidad Los Mochis (UdeO),2019-02-01
+Los Mochis,Sinaloa,Instituto Tecnologico de Los Mochis (ITM),2019-02-01
+Sinaloa,Sinaloa,Universidad Autónoma de Sinaloa,2019-02-01
+Sinaloa,Sinaloa,ITESM Sinaloa,2019-02-01
+Sinaloa,Sinaloa,Universidad de Occidente ,2019-02-01
+Sinaloa,Sinaloa,Otra Universidad,2019-02-01
+Sinaloa,Sinaloa,Instituto Tecnológico de Culiacán,2019-02-01
+Sinaloa,Sinaloa,Tec Milenio Sinaloa,2019-02-01
+Ciudad Obregón,Sonora,Universidad La Salle Noroeste,2019-02-01
+Ciudad Obregón,Sonora,Instituto Tecnológico de Sonora,2019-02-01
+Ciudad Obregón,Sonora,Universidad Vizcaya de las Américas Campus Ciudad Obregón,2019-02-01
+Ciudad Obregón,Sonora,Universidad Durango santander Campus Ciudad Obregon,2019-02-01
+Ciudad Obregón,Sonora,ITESM Ciudad Obregon,2019-02-01
+Ciudad Obregón,Sonora,UNID campus Ciudad Obregon,2019-02-01
+Ciudad Obregón,Sonora,Instituto Tecnológico Superior de Cajeme,2019-02-01
+Ciudad Obregón,Sonora,Universidad de Sonora (campus Ciudad Obregón),2019-02-01
+Sonora,Sonora,ITESM Sonora,2019-02-01
+Sonora,Sonora,Universidad de Sonora (campus Hermosillo),2019-02-01
+Sonora,Sonora,Instituto Tecnológico de Hermosillo,2019-02-01
+Sonora,Sonora,Universidad Estatal de Sonora,2019-02-01
+Sinaloa,Sonora,Otra Universidad,2019-02-01
+Sonora,Sonora,Tec Milenio Hermosillo,2019-02-01
+Sonora,Sonora,Vizcaya de las Américas,2019-02-01
+Sonora,Sonora,Universidad Durango Santander,2019-02-01
+Sonora,Sonora,UVM Hermosillo,2019-02-01
+Sonora,Sonora,UNILIDER,2019-02-01
+Tabasco,Tabasco,Universidad Juárez Autónoma de Tabasco,2019-02-01
+Tabasco,Tabasco,Universidad Autónoma de Guadalajara Campus Tabasco,2019-02-01
+Tabasco,Tabasco,Universidad Olmeca,2019-02-01
+Tabasco,Tabasco,Instituto Tecnológico de Villahermosa,2019-02-01
+Oaxaca,Tabasco,Otra Universidad,2019-02-01
+Tabasco,Tabasco,Tec Milenio Villahermosa,2019-02-01
+Tabasco,Tabasco,UVM Villahermosa,2019-02-01
+Tabasco,Tabasco,Universidad Tecnológica de Tabasco,2019-02-01
+Tabasco,Tabasco,UMMA,2019-02-01
+Tabasco,Tabasco,Instituto Universitario de Puebla,2019-02-01
+Tampico,Tamaulipas,ITESM Tampico,2019-02-01
+Tampico,Tamaulipas,Universidad Del Noreste (UNE),2019-02-01
+Tampico,Tamaulipas,UVM Tampico,2019-02-01
+Poza Rica,Tamaulipas,Otra Universidad,2019-02-01
+Tampico,Tamaulipas,Instituto de Estudios Superiores de Tamaulipas (IEST Anáhuac),2019-02-01
+Tampico,Tamaulipas,Universidad Autónoma de Tamaulipas,2019-02-01
+Tampico,Tamaulipas,Instituto de Ciencias y Estudios Superiores de Tamaulipas (ICEST),2019-02-01
+Tampico,Tamaulipas,Instituto Tecnológico de Cd. Madero,2019-02-01
+Puebla,Tlaxcala,Todas las Universidades,2019-02-01
+Poza Rica,Veracruz,Instituto Tecnológico Superior de Poza Rica,2019-02-01
+Poza Rica,Veracruz,Universidad Veracruzana (Poza Rica),2019-02-01
+Poza Rica,Veracruz,Universidad del Golfo de México,2019-02-01
+Poza Rica,Veracruz,Universidad Pedagógica Nacional,2019-02-01
+Poza Rica,Veracruz,Universidad de Oriente,2019-02-01
+Veracruz,Veracruz,Otra Universidad,2019-02-01
+Poza Rica,Veracruz,Instituto Tecnológico Superior de Poza Rica ext. Tihuatlán,2019-02-01
+Veracruz,Veracruz,Universidad Veracruzana,2019-02-01
+Veracruz,Veracruz,ITESM Córdoba,2019-02-01
+Veracruz,Veracruz,Universidad Euro Hispanoamericana,2019-02-01
+Veracruz,Veracruz,Instituto Tecnológico Superior de Alvarado,2019-02-01
+Veracruz,Veracruz,Benemérita Escuela Normal Veracruzana Enrique C. Rebsamen,2019-02-01
+Veracruz,Veracruz,Instituto Tecnológico Superior de Xalapa,2019-02-01
+Veracruz,Veracruz,Universidad Cristóbal Colón (UCC),2019-02-01
+Veracruz,Veracruz,Universidad de América Latina,2019-02-01
+Veracruz,Veracruz,Universidad de Xalapa (UX),2019-02-01
+Veracruz,Veracruz,Universidad Tecmilenio,2019-02-01
+Veracruz,Veracruz,UVM Veracruz,2019-02-01
+Veracruz,Veracruz,Universidad Anahuac,2019-02-01
+Yucatán,Yucatán,Universidad Autónoma de Yucatán,2019-02-01
+Yucatán,Yucatán,Universidad Marista,2019-02-01
+Veracruz,Yucatán,Otra Universidad,2019-02-01
+Yucatán,Yucatán,Universidad Modelo,2019-02-01
+Yucatán,Yucatán,EBC Yucatán,2019-02-01
+Yucatán,Yucatán,Universidad Anahuác Mayab,2019-02-01
+Zacatecas,Zacatecas,Universidad Autónoma de Zacatecas ,2019-02-01
+Zacatecas,Zacatecas,Instituto Tecnológico de Zacatecas ITZ,2019-02-01
+Zacatecas,Zacatecas,Universidad Autónoma de Durango Campus Zacatecas,2019-02-01
+Zacatecas,Zacatecas,Universidad de la Vera-Cruz Campus Zacatecas,2019-02-01
+Zacatecas,Zacatecas,Universidad Interamericana para el Desarrollos Campus Zacatecas,2019-02-01
+Zacatecas,Zacatecas,ITESM Zacatecas,2019-02-01
+León,Zacatecas,Otra Universidad,2019-02-01
