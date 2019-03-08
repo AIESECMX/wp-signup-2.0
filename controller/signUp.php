@@ -208,7 +208,8 @@ function sendToExpa($lc_id){
       'lc_input' => $lc_id, //Put here EY code
       'lc' => $lc_id,  //Put here EY code
       //'alignment_id' => '', //Put here alignment ID
-      'referral_type' => array(
+      'referral_type' => 'Other' //Put here referral
+      /* 'referral_type' => array(
         '1' => 'Facebook',
         '2' => 'Twitter',
         '3' => 'Instagram',
@@ -222,7 +223,7 @@ function sendToExpa($lc_id){
         '12' => 'Friend'
         '13' => 'WebChat',
         '14' => 'Other'
-      ), //Put here referral
+      ), //Put here referral */
     )
   );
 
@@ -342,9 +343,17 @@ function get_redis() {
         $app = $configs_external[UNIVERSITIES."-app"];
 
         Podio::authenticate_with_app($app["id"],$app["key"]);
-        //This hardcoded limit can fail if there are more than 500 allocations at some point
-        //Idea for evolution, add a filter for the semester allocation only
-        $items = PodioItem::filter($app["id"],array('limit' => 500,'sort_by' => 'title'));
+        //This hardcoded limit will fail if there are more than 500 allocations at some point
+        $items = PodioItem::filter($app["id"],array(
+          'limit' => 500,
+          'sort_by' => 'title',
+          'filters' => array(
+            $app["fields"]["date"] => array(
+              'from' => $configs_external['ur_last_updated'],
+              'to' => $configs_external['ur_last_updated']
+            )
+          )
+        ));
 
         foreach ($items as $item) {
           $redis->sadd(UNIVERSITIES,$item->title);
