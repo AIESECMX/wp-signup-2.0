@@ -20,7 +20,7 @@ function load_scripts($palette = "--aiesec-color") {
     'palette' => $palette,
   ));
 
-  wp_enqueue_script('signup-allocations',plugins_url('js/ur_allocations.js',__FILE__),array('signup-main'));
+  wp_enqueue_script('signup-allocations',plugins_url('js/ur_allocation1.1.js',__FILE__),array('signup-main'));
   wp_enqueue_style('purecss','https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css');
   wp_enqueue_style('singup-style',plugins_url('css/signupform.css',__FILE__));
 }
