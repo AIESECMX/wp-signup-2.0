@@ -11,7 +11,7 @@ require_once './errors/ExpaExceptions.php';
 //Is this debug mode?
 // * If yes(1), set captcha sandbox & test Podio Workspace;
 // * else(0), set production keys
-define('DEBUG',1);
+define('DEBUG',0);
 
 //Load Private Keys from Configuration File
 //Do not keep on local folder. Keep outside of public-web to ensure non authorized people won't enter. Also, chmod this accordingly :)
@@ -94,11 +94,10 @@ if( check_captcha() ) {
 
     //Gets EY ID for the lead. If the EY doesn't run a product, it selects VAM as the default EY.
     $ids = getEyIds($product);
-
-    //Step 1: Add EP to EXPA or send to pending queue if EXPA is not available
+    
+    //Step 1: Add EP to EXPA [TO-DO]: or send to pending queue if EXPA is not available
     try {
       $ep_id = sendToExpa($ids['expa']); //Signs up EP on EXPA with a randomly generated (not yet) password. Sends that password to the user's email (not yet)
-
     } catch(EXPA\EmailException $e) {
       $ep_id = null;
       error_log("signup_error: Email already exists on EXPA");
@@ -106,6 +105,7 @@ if( check_captcha() ) {
 
       // Do not allow for duplicate resgistations, not even on Podio, to make DB cleaning faster
       header("Location: http://aiesec.org.mx/registro_no/?error=email_exists");
+      die($e->getMessage());
     } catch(Exception $e) {
       error_log("signup_error: ".$e->getMessage());
       echo "I had a random exception: ".$e->getMessage()."<br>";
@@ -113,21 +113,22 @@ if( check_captcha() ) {
 
       //This is supposed to be replaced with thankyou-gv-podio to distinguish only Podio was created after the second try
       header("Location: http://aiesec.org.mx/registro_no/?error=expa");
+      die($e->getMessage());
       //If EP was not added to EXPA, then, set redirection script to pending expa sign-up
       //Also, send to Pub/Sub queue to trigger regular functions
     }
- 
-    //Step 2: Add EP to Podio or send to pending queue if Podio is not available
+
+    //Step 2: Add EP to Podio [TO-DO]: or send to pending queue if Podio is not available
     try {
       addToPodio($product,$ids['podio'],isset($ep_id)?$ep_id:null); //EP ID for future feature of PDY anonymization
     } catch (PodioError $e) {
       //This needs an extra redirection
       header("Location: http://aiesec.org.mx/registro_no/?error=podio");
-      //die($e->getMessage());
+      die($e->getMessage());
     } catch(Exception $e) {
       error_log($e->getTrace());
       header("Location: http://aiesec.org.mx/registro_no");
-      //die($e->getMessage());
+      die($e->getMessage());
     }
 
     header(getRedirection($product));
@@ -169,7 +170,6 @@ function check_captcha(){
     
   if(DEBUG === 1) {
     $recaptcha = new \ReCaptcha\ReCaptcha($configs_external['recaptcha_secret_test']);
-    return true;
   }
   else {
     $recaptcha = new \ReCaptcha\ReCaptcha($configs_external['recaptcha_secret']);
@@ -233,7 +233,7 @@ function sendToExpa($lc_id){
       'lc_input' => $lc_id, //Put here EY code
       'lc' => $lc_id,  //Put here EY code
       //'alignment_id' => '', //Put here alignment ID
-      'referral_type' => REFERRAL_DATA[$_POST[REFERRAL]]
+      'referral_type' => REFERRAL_DATA[$_POST[REFERRAL]],
     )
   );
 
@@ -489,6 +489,7 @@ function addToPodio($product,$ey_id,$ep_expa_id){
   }
   catch (PodioError $e) {
     echo "There was an error while inserting into Podio<br>";
+    print_r($e->body);
     throw $e;
   }
   catch (Exception $e) {
