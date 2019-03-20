@@ -32,6 +32,7 @@ define('STATE_SELECT',"stateSelect");
 define('UNIVERSITY_SELECT',"universitySelect");
 define('EY_SELECT',"eySelect");
 define('PRODUCT_SELECT',"product");
+define('REFERRAL',"sourceSelect");
 
 //Redis Hashes & Sets for in-memory search instead of Podio
 define('STATES',"states"); //Hash to save the Podio IDs of States
@@ -51,6 +52,26 @@ const EXPA_PRODS = array(
   OGV => array('program' => 1,'type' => 'person'),
   OGT => array('program' => 2,'type' => 'person'),
   OGE => array('program' => 5,'type' => 'person'),
+);
+const REFERRAL_DATA = array(
+  "1" => "Facebook",
+  "2" => "Facebook",
+  "3" => "Search engine",
+  "4" => "Twitter",
+  "5" => "Instagram",
+  "6" => "LinkedIn",
+  "8" => "Friend",
+  "9" => "Other",
+  "10" => "Information booth on campus",
+  "11" => "Information booth on campus",
+  "12" => "Event",
+  "13" => "Media (magazine, TV, newspaper or radio)",
+  "14" => "Friend",
+  "15" => "Media (magazine, TV, newspaper or radio)",
+  "16" => "Event",
+  "18" => "Media (magazine, TV, newspaper or radio)",
+  "19" => "Classroom presentation",
+  "20" => "Other",
 );
 
 //|--------------|
@@ -82,6 +103,9 @@ if( check_captcha() ) {
       $ep_id = null;
       error_log("signup_error: Email already exists on EXPA");
       echo "I had an email exception <br>";
+
+      // Do not allow for duplicate resgistations, not even on Podio, to make DB cleaning faster
+      header("Location: http://aiesec.org.mx/registro_no/?error=email_exists");
     } catch(Exception $e) {
       error_log("signup_error: ".$e->getMessage());
       echo "I had a random exception: ".$e->getMessage()."<br>";
@@ -208,22 +232,7 @@ function sendToExpa($lc_id){
       'lc_input' => $lc_id, //Put here EY code
       'lc' => $lc_id,  //Put here EY code
       //'alignment_id' => '', //Put here alignment ID
-      'referral_type' => 'Other' //Put here referral
-      /* 'referral_type' => array(
-        '1' => 'Facebook',
-        '2' => 'Twitter',
-        '3' => 'Instagram',
-        '4' => 'LinkedIn',
-        '5' => 'Other social media channel',
-        '6' => 'Search engine',
-        '8' => 'Information booth on campus',
-        '9' => 'Media (magazine, TV, newspaper or radio)',
-        '10' => 'Classroom presentation',
-        '11' => 'Event',
-        '12' => 'Friend'
-        '13' => 'WebChat',
-        '14' => 'Other'
-      ), //Put here referral */
+      'referral_type' => REFERRAL_DATA($_POST[REFERRAL])
     )
   );
 
@@ -307,7 +316,8 @@ function get_redis() {
         //Authenticate to app, filter items
         Podio::authenticate_with_app($app["id"],$app["key"]);
         $items = PodioItem::filter($app["id"],array('limit' => 100,'sort_by' => 'title'));
-        //NOTE: Hardcoding 'limit' (in line above) can introduce scalability issues (Not likely due to the size of AIESEC operations, most likely to fail is university allocations limit)
+        // NOTE: Hardcoding 'limit' (in line above) can introduce scalability issues
+        // (Not likely due to the size of AIESEC operations, most likely to fail is university allocations limit)
 
         foreach ($items as $item) {
           $redis->hset(STATES,$item->title,$item->id);
@@ -320,6 +330,8 @@ function get_redis() {
 
         Podio::authenticate_with_app($app["id"],$app["key"]);
         $items = PodioItem::filter($app["id"],array('limit' => 100,'sort_by' => 'title'));
+        // NOTE: Hardcoding 'limit' (in line above) can introduce scalability issues
+        // (Not likely due to the size of AIESEC operations, most likely to fail is university allocations limit)
 
         foreach ($items as $item) {
           $redis->sadd(EYS,$item->title);
@@ -356,10 +368,11 @@ function get_redis() {
         ));
 
         foreach ($items as $item) {
-          $redis->sadd(UNIVERSITIES,$item->title);
+          $full_name = $item->fields[$app["fields"]["fullName"]]->values;
+          $redis->sadd(UNIVERSITIES,$full_name);
 
           foreach($item->fields[$app["fields"]["ey"]]->values as $ey) {
-            $redis->hmset(UNIVERSITIES.":$item->title",array(
+            $redis->hmset(UNIVERSITIES.":$full_name",array(
               EYS => $ey->id,
               "id" => $item->id
             ));
