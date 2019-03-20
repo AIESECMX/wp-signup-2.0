@@ -9,7 +9,7 @@ jQuery(document).ready(function ($){
     //Note: The states of Mexico are hard coded, it would be nice to have them
     //      being able to change dinamically somehow. Not a necessity though
     //      since this data most certainly won't change in the near future
-    var states = ['Aguascalientes','Baja California','Baja California Sur','Campeche','CDMX','Chiapas','Chihuahua','Coahuila','Colima','Durango','Estado de México','Guanajuato','Guerrero','Hidalgo','Jalisco','Michoacán','Morelos','Nayarit','Nuevo León','Oaxaca','Puebla','Querétaro','Quintana Roo','San Luis Potosí','Sinaloa','Sonora','Tabasco','Tamaulipas','Tlaxcala','Veracruz','Yucatán','Zacatecas','Otros']
+    var states = ['Aguascalientes','Baja California','Baja California Sur','Campeche','CDMX','Chiapas','Chihuahua','Coahuila','Colima','Durango','Estado de México','Guanajuato','Guerrero','Hidalgo','Jalisco','Michoacán','Morelos','Nayarit','Nuevo León','Oaxaca','Puebla','Querétaro','Quintana Roo','San Luis Potosí','Sinaloa','Sonora','Tabasco','Tamaulipas','Tlaxcala','Veracruz','Yucatán','Zacatecas']
 
     //--------------------------------------------------------||
     // Task 1: Complete values of options for Mexico's States ||
