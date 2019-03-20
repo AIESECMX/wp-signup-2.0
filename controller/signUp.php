@@ -11,7 +11,7 @@ require_once './errors/ExpaExceptions.php';
 //Is this debug mode?
 // * If yes(1), set captcha sandbox & test Podio Workspace;
 // * else(0), set production keys
-define('DEBUG',0);
+define('DEBUG',1);
 
 //Load Private Keys from Configuration File
 //Do not keep on local folder. Keep outside of public-web to ensure non authorized people won't enter. Also, chmod this accordingly :)
@@ -168,7 +168,8 @@ function check_captcha(){
   global $configs_external;
     
   if(DEBUG === 1) {
-    $recaptcha = new \ReCaptcha\ReCaptcha($configs_external['recaptcha_secret_test']); 
+    $recaptcha = new \ReCaptcha\ReCaptcha($configs_external['recaptcha_secret_test']);
+    return true;
   }
   else {
     $recaptcha = new \ReCaptcha\ReCaptcha($configs_external['recaptcha_secret']);
@@ -232,7 +233,7 @@ function sendToExpa($lc_id){
       'lc_input' => $lc_id, //Put here EY code
       'lc' => $lc_id,  //Put here EY code
       //'alignment_id' => '', //Put here alignment ID
-      'referral_type' => REFERRAL_DATA($_POST[REFERRAL])
+      'referral_type' => REFERRAL_DATA[$_POST[REFERRAL]]
     )
   );
 
