@@ -44,8 +44,8 @@ jQuery(document).ready(function ($){
       var filteredUni = lcAllocations.filter(function (el) {
         return stateVal == el[stateField]
       }).sort(function (a,b){
-        if(a[universityField] === OTHER_TEXT || b[universityField] === OTHER_TEXT) {
-          return a[universityField] === OTHER_TEXT ? 1 : -1;
+        if(a[universityField].indexOf(OTHER_TEXT) !== -1 || b[universityField].indexOf(OTHER_TEXT) !== -1) {
+          return a[universityField].indexOf(OTHER_TEXT) !== -1 ? 1 : -1;
         }
         return a[universityField].localeCompare(b[universityField],'la')
       });
