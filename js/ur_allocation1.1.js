@@ -1,7 +1,6 @@
 jQuery(document).ready(function ($){
   var OTHER_TEXT = 'Otra Universidad';
   var ALL_TEXT = 'Todas las Universidades';
-  var OTHER_ARRAY = [OTHER_TEXT, ALL_TEXT];
   var urAllocation = wp_data.allocationUrl
   //Get LC Allocations from PHP file
   $.get(urAllocation, function (data){
@@ -40,46 +39,45 @@ jQuery(document).ready(function ($){
       var universitySelect = $(universityId)
       var wrapper = $(universityId+'-wrapper')
       var stateVal = $(selectId).val()
-      universitySelect.empty();
+      universitySelect.empty(); // Here the array length is zero
 
-      var filteredUni = lcAllocations.filter(function (el){
+      var filteredUni = lcAllocations.filter(function (el) {
         return stateVal == el[stateField]
-      }).sort(function (a,b){return a[universityField].localeCompare(b[universityField],'la')});
-
-      var hasOtherOption = filteredUni.some(function (el){
-        return OTHER_TEXT === el[universityField] || ALL_TEXT === el[universityField]
+      }).sort(function (a,b){
+        if(a[universityField] === OTHER_TEXT || b[universityField] === OTHER_TEXT) {
+          return a[universityField] === OTHER_TEXT ? 1 : -1;
+        }
+        return a[universityField].localeCompare(b[universityField],'la')
       });
       
-      if(filteredUni.length === 1 && !hasOtherOption || filteredUni.length > 1 ) { //If there is at least one university to select
+      // If there is at least one university to select, then append "Select an option" beforehand
+      if(filteredUni.length > 1 ) {
         universitySelect.append(genericOption);
       }
 
-      filteredUni.forEach(function (allocation){
-        const auxString = optionBase.replace(placeholder,
-          OTHER_ARRAY.indexOf(allocation[universityField]) === -1 ? allocation[universityField] : 'other'
-        );
+      // Append all JSON allocations into the DOM (as options for University Select)
+      filteredUni.forEach(function (allocation) {
         universitySelect.append(
-          auxString.replace(placeholder,allocation[universityField])
-        )
+          optionBase.replace(placeholder,allocation[stateField]+' - '+allocation[universityField])
+          .replace(placeholder,allocation[universityField])
+        );
       })
 
+      // Just in case the JSON is empty for that state (for some weird reason) add "All Universities" option
       if(filteredUni.length === 0) {
         universitySelect.append(
           optionBase.replace(placeholder,'other')
           .replace(placeholder,ALL_TEXT)
         )
       }
+      
       //If there are not segmented universities (only the default one), do not show "University" field
-      if(filteredUni.length === 1 && !hasOtherOption ) {
+      if(filteredUni.length === 1) {
         //Hides the university field
         wrapper.css('display', 'none')
         universitySelect.prop("disabled", true);
       }
       else {
-        universitySelect.append(
-        optionBase.replace(placeholder,'other')
-        .replace(placeholder,OTHER_TEXT)
-        )
         //Shows the university field
         wrapper.css('display', 'flex')
         universitySelect.prop("disabled", false);
