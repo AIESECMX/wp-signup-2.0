@@ -136,13 +136,13 @@ if( check_captcha() ) {
   else {
     //We need some way to log this has happened
     header("Location: http://aiesec.org.mx/registro_no/?error=validation");
-    //die("Hubo un error al completar los campos. Por favor asegúrese de que todos los datos son correctos e intente de nuevo.");
+    die("Hubo un error al completar los campos. Por favor asegúrese de que todos los datos son correctos e intente de nuevo.");
   }
 }
 else {
   //Log this has happened just to verify we have humans trying to acces our resources
   header("Location: http://aiesec.org.mx/registro_no/?error=captcha");
-  //die("La verificación CAPTCHA falló. Por favor intente de nuevo");
+  die("La verificación CAPTCHA falló. Por favor intente de nuevo");
 }
 
 function checkEmailExistsPodio($app,$email) {
@@ -296,7 +296,7 @@ function curl_errors($ch) {
 
 }
 
-function validate_post($data) { return isset($data[FIRST_NAME]) && isset($data[LAST_NAME]) && isset($data[EMAIL]) && isset($data[MOBILE_PHONE]) && isset($data[SOURCE_SELECT]) && isset($data[STATE_SELECT]); }
+function validate_post($data) { return isset($data[FIRST_NAME]) && isset($data[LAST_NAME]) && isset($data[EMAIL]) && isset($data[MOBILE_PHONE]) && isset($data[SOURCE_SELECT]) && isset($data[STATE_SELECT]) && isset($data[UNIVERSITY_SELECT]); }
 
 //TO-DO: Separate Model construction into "Model" folder
 function get_redis() {
@@ -335,17 +335,18 @@ function get_redis() {
         // (Not likely due to the size of AIESEC operations, most likely to fail is university allocations limit)
 
         foreach ($items as $item) {
-          $redis->sadd(EYS,$item->title);
+          if($item->title !== "VAM") {
+            $redis->sadd(EYS,$item->title);
+            $prods = mapProducts($item->fields[$app["fields"]["products"]]->values);
 
-          $prods = mapProducts($item->fields[$app["fields"]["products"]]->values);
+            $redis->hmset(EYS.":$item->id",array(
+              "title" => $item->title,
+              "expa" => $item->fields[$app["fields"]["expa"]]->values,
+            ));
 
-          $redis->hmset(EYS.":$item->id",array(
-            "title" => $item->title,
-            "expa" => $item->fields[$app["fields"]["expa"]]->values,
-          ));
-
-          foreach ($prods as $prod) {
-            $redis->hset(EYS.":$item->id",strtolower($prod),($prod));
+            foreach ($prods as $prod) {
+              $redis->hset(EYS.":$item->id",strtolower($prod),($prod));
+            }
           }
         }
         
@@ -372,12 +373,31 @@ function get_redis() {
           $full_name = $item->fields[$app["fields"]["fullName"]]->values;
           $redis->sadd(UNIVERSITIES,$full_name);
 
-          foreach($item->fields[$app["fields"]["ey"]]->values as $ey) {
+          // Unset product allocations from previous iterations
+          unset($ogv, $ogt, $oge);
+
+          // Get the entities to be assigned for each product
+          if(isset($item->fields[$app["fields"]["gv"]]->values)) {
+            $ogv = $item->fields[$app["fields"]["gv"]]->values[0]->id;
+          }
+          if(isset($item->fields[$app["fields"]["gt"]]->values)) {
+            $ogt = $item->fields[$app["fields"]["gt"]]->values[0]->id;
+          }
+          if(isset($item->fields[$app["fields"]["ge"]]->values)) {
+            $oge = $item->fields[$app["fields"]["ge"]]->values[0]->id;
+          }
+
+          // Afterwards, get the default fallback entity in case there is not any present
+          // If there is no fallback entity, then the allocation is not added into redis
+          if(isset($item->fields[$app["fields"]["ey"]]->values)) {
+            $ey = $item->fields[$app["fields"]["ey"]]->values[0];
             $redis->hmset(UNIVERSITIES.":$full_name",array(
               EYS => $ey->id,
+              OGV => isset($ogv) ? $ogv : $ey->id,
+              OGT => isset($ogt) ? $ogt : $ey->id,
+              OGE => isset($oge) ? $oge : $ey->id,
               "id" => $item->id
             ));
-            break;
           }
         }
       }
@@ -405,16 +425,8 @@ function mapProducts($prods) {
 function getEyIds($product = OGV) {
   global $redis;
   
-  //If there is no university selection, then VAM should be selected straight away
-  // because it's a market for expansion
-  if(!isset($_POST[UNIVERSITY_SELECT])) {
-    $ey_podio = $redis->hget(UNIVERSITIES.":".VAM_REDIS,EYS);
-    echo "Lead Reallocated to VAM<br>";
-  }
-  else {
-    echo "Got University: ".$_POST[UNIVERSITY_SELECT]."<br>";
-    $ey_podio = $redis->hget(UNIVERSITIES.":".$_POST[UNIVERSITY_SELECT],EYS);
-  }
+  echo "Got University: ".$_POST[UNIVERSITY_SELECT]." and product is ".$product."<br>";
+  $ey_podio = $redis->hget(UNIVERSITIES.":".$_POST[UNIVERSITY_SELECT],$product);
 
   $ey_expa = $redis->hget(EYS.":$ey_podio","expa");
   echo "'Should be' EY: ".$redis->hget(EYS.":$ey_podio","title").", expa id: $ey_expa"."<br>";
@@ -422,9 +434,10 @@ function getEyIds($product = OGV) {
 
   //Reallocate in case EY doesn't run product
   if(!$redis->hexists(EYS.":$ey_podio",$product)) {
-    $ey_expa = VAM_ID;
-    $ey_podio = $redis->hget(UNIVERSITIES.":".VAM_REDIS,EYS);
-    echo "Lead Reallocated to VAM<br>";
+    echo "Error! selected entity does not run ".$product."<br>";
+    $ey_podio = $redis->hget(UNIVERSITIES.":".$_POST[UNIVERSITY_SELECT],EYS);
+    $ey_expa = $redis->hget(EYS.":$ey_podio","expa");
+    echo "Reallocating lead to fallback entity: ".$redis->hget(EYS.":$ey_podio","title")."<br>";
   }
   
   return array('expa'=>$ey_expa,'podio'=>$ey_podio);
