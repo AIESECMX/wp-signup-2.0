@@ -1,19 +1,19 @@
 state,lc_name,university,oGV,oGE,oGT,valid_from
-Aguascalientes,Aguascalientes,Universidad Cuauhtémoc Aguascalientes,Aguascalientes,Aguascalientes,León,1/2/2019
-Aguascalientes,Aguascalientes,Prepa Tec,Aguascalientes,Aguascalientes,León,1/2/2019
-Aguascalientes,Aguascalientes,UCA,Aguascalientes,Aguascalientes,León,1/2/2019
-Aguascalientes,Aguascalientes,Instituto Tecnológico de Monterrey Campus Aguascalientes,Aguascalientes,Aguascalientes,León,1/2/2019
-Aguascalientes,Aguascalientes,Otra Universidad de Aguascalientes,Aguascalientes,Aguascalientes,León,1/2/2019
-Aguascalientes,Aguascalientes,UP,Aguascalientes,Aguascalientes,León,1/2/2019
-Aguascalientes,Aguascalientes,Universidad Autónoma de Aguascalientes,Aguascalientes,Aguascalientes,León,1/2/2019
-Aguascalientes,Aguascalientes,Universidad del Valle de México Aguascalientes,Aguascalientes,Aguascalientes,León,1/2/2019
-Baja California,Tijuana,Universidad Autónoma de Baja California,Tijuana,Sinaloa,Sonora,1/2/2019
-Baja California,Tijuana,CETYS Universidad,Tijuana,Sinaloa,Sonora,1/2/2019
-Baja California,Tijuana,Universidad Iberoamericana Tijuana,Tijuana,Sinaloa,Sonora,1/2/2019
-Baja California,Tijuana,Otra Universidad de Baja California,Tijuana,Sinaloa,Sonora,1/2/2019
-Baja California,Tijuana,Universidad Xochicalco ,Tijuana,Sinaloa,Sonora,1/2/2019
-Baja California,Tijuana,Tecnológico de Tijuana ,Tijuana,Sinaloa,Sonora,1/2/2019
-Baja California Sur,Tijuana,Todas las Universidades de Baja California Sur,Tijuana,Sinaloa,Sonora,1/2/2019
+Aguascalientes,Aguascalientes,Universidad Cuauhtémoc Aguascalientes,Aguascalientes,Zacatecas,León,1/2/2019
+Aguascalientes,Aguascalientes,Prepa Tec,Aguascalientes,Zacatecas,León,1/2/2019
+Aguascalientes,Aguascalientes,UCA,Aguascalientes,Zacatecas,León,1/2/2019
+Aguascalientes,Aguascalientes,Instituto Tecnológico de Monterrey Campus Aguascalientes,Aguascalientes,Zacatecas,León,1/2/2019
+Aguascalientes,Aguascalientes,Otra Universidad de Aguascalientes,Aguascalientes,Zacatecas,León,1/2/2019
+Aguascalientes,Aguascalientes,UP,Aguascalientes,Zacatecas,León,1/2/2019
+Aguascalientes,Aguascalientes,Universidad Autónoma de Aguascalientes,Aguascalientes,Zacatecas,León,1/2/2019
+Aguascalientes,Aguascalientes,Universidad del Valle de México Aguascalientes,Aguascalientes,Zacatecas,León,1/2/2019
+Baja California,Tijuana,Universidad Autónoma de Baja California,Tijuana,Sinaloa,Tijuana,1/2/2019
+Baja California,Tijuana,CETYS Universidad,Tijuana,Sinaloa,Tijuana,1/2/2019
+Baja California,Tijuana,Universidad Iberoamericana Tijuana,Tijuana,Sinaloa,Tijuana,1/2/2019
+Baja California,Tijuana,Otra Universidad de Baja California,Tijuana,Sinaloa,Tijuana,1/2/2019
+Baja California,Tijuana,Universidad Xochicalco ,Tijuana,Sinaloa,Tijuana,1/2/2019
+Baja California,Tijuana,Tecnológico de Tijuana ,Tijuana,Sinaloa,Tijuana,1/2/2019
+Baja California Sur,Tijuana,Todas las Universidades de Baja California Sur,Tijuana,Sinaloa,Tijuana,1/2/2019
 Campeche,Yucatán,Todas las Universidades de Campeche,Yucatán,Veracruz,Yucatán,1/2/2019
 CDMX,IPN,Instituto Politécnico Nacional (Todos los campus CDMX y Edo. de México),IPN,ITAM,IPN,1/2/2019
 CDMX,IPN,UNITEC (Todos los campus CDMX y Edo. de México),IPN,ITAM,IPN,1/2/2019
@@ -242,14 +242,14 @@ Sinaloa,Sinaloa,Universidad de Occidente ,Sinaloa,Sinaloa,Sonora,1/2/2019
 Sinaloa,Sinaloa,Otra Universidad de Sinaloa,Sinaloa,Sinaloa,Sonora,1/2/2019
 Sinaloa,Sinaloa,Instituto Tecnológico de Culiacán,Sinaloa,Sinaloa,Sonora,1/2/2019
 Sinaloa,Sinaloa,Tec Milenio Sinaloa,Sinaloa,Sinaloa,Sonora,1/2/2019
-Sonora,Ciudad Obregón,Universidad La Salle Noroeste,Ciudad Obregón,Sinaloa,Sonora,1/2/2019
-Sonora,Ciudad Obregón,Instituto Tecnológico de Sonora,Ciudad Obregón,Sinaloa,Sonora,1/2/2019
-Sonora,Ciudad Obregón,Universidad Vizcaya de las Américas Campus Ciudad Obregón,Ciudad Obregón,Sinaloa,Sonora,1/2/2019
-Sonora,Ciudad Obregón,Universidad Durango santander Campus Ciudad Obregon,Ciudad Obregón,Sinaloa,Sonora,1/2/2019
-Sonora,Ciudad Obregón,ITESM Ciudad Obregon,Ciudad Obregón,Sinaloa,Sonora,1/2/2019
-Sonora,Ciudad Obregón,UNID campus Ciudad Obregon,Ciudad Obregón,Sinaloa,Sonora,1/2/2019
-Sonora,Ciudad Obregón,Instituto Tecnológico Superior de Cajeme,Ciudad Obregón,Sinaloa,Sonora,1/2/2019
-Sonora,Ciudad Obregón,Universidad de Sonora (campus Ciudad Obregón),Ciudad Obregón,Sinaloa,Sonora,1/2/2019
+Sonora,Ciudad Obregón,Universidad La Salle Noroeste,Ciudad Obregón,Ciudad Obregón,Sonora,1/2/2019
+Sonora,Ciudad Obregón,Instituto Tecnológico de Sonora,Ciudad Obregón,Ciudad Obregón,Sonora,1/2/2019
+Sonora,Ciudad Obregón,Universidad Vizcaya de las Américas Campus Ciudad Obregón,Ciudad Obregón,Ciudad Obregón,Sonora,1/2/2019
+Sonora,Ciudad Obregón,Universidad Durango santander Campus Ciudad Obregon,Ciudad Obregón,Ciudad Obregón,Sonora,1/2/2019
+Sonora,Ciudad Obregón,ITESM Ciudad Obregon,Ciudad Obregón,Ciudad Obregón,Sonora,1/2/2019
+Sonora,Ciudad Obregón,UNID campus Ciudad Obregon,Ciudad Obregón,Ciudad Obregón,Sonora,1/2/2019
+Sonora,Ciudad Obregón,Instituto Tecnológico Superior de Cajeme,Ciudad Obregón,Ciudad Obregón,Sonora,1/2/2019
+Sonora,Ciudad Obregón,Universidad de Sonora (campus Ciudad Obregón),Ciudad Obregón,Ciudad Obregón,Sonora,1/2/2019
 Sonora,Sonora,ITESM Sonora,Sonora,Sinaloa,Sonora,1/2/2019
 Sonora,Sonora,Universidad de Sonora (campus Hermosillo),Sonora,Sinaloa,Sonora,1/2/2019
 Sonora,Sonora,Instituto Tecnológico de Hermosillo,Sonora,Sinaloa,Sonora,1/2/2019
@@ -279,13 +279,13 @@ Tamaulipas,Tampico,Universidad Autónoma de Tamaulipas,Tampico,Poza Rica,Tampico
 Tamaulipas,Tampico,Instituto de Ciencias y Estudios Superiores de Tamaulipas (ICEST),Tampico,Poza Rica,Tampico,1/2/2019
 Tamaulipas,Tampico,Instituto Tecnológico de Cd. Madero,Tampico,Poza Rica,Tampico,1/2/2019
 Tlaxcala,Puebla,Todas las Universidades de Tlaxcala,Puebla,Puebla,Puebla,1/2/2019
-Veracruz,Poza Rica,Instituto Tecnológico Superior de Poza Rica,Poza Rica,Poza Rica,Veracruz,1/2/2019
-Veracruz,Poza Rica,Universidad Veracruzana (Poza Rica),Poza Rica,Poza Rica,Veracruz,1/2/2019
-Veracruz,Poza Rica,Universidad del Golfo de México,Poza Rica,Poza Rica,Veracruz,1/2/2019
-Veracruz,Poza Rica,Universidad Pedagógica Nacional,Poza Rica,Poza Rica,Veracruz,1/2/2019
-Veracruz,Poza Rica,Universidad de Oriente,Poza Rica,Poza Rica,Veracruz,1/2/2019
+Veracruz,Poza Rica,Instituto Tecnológico Superior de Poza Rica,Poza Rica,Veracruz,Veracruz,1/2/2019
+Veracruz,Poza Rica,Universidad Veracruzana (Poza Rica),Poza Rica,Veracruz,Veracruz,1/2/2019
+Veracruz,Poza Rica,Universidad del Golfo de México,Poza Rica,Veracruz,Veracruz,1/2/2019
+Veracruz,Poza Rica,Universidad Pedagógica Nacional,Poza Rica,Veracruz,Veracruz,1/2/2019
+Veracruz,Poza Rica,Universidad de Oriente,Poza Rica,Veracruz,Veracruz,1/2/2019
 Veracruz,Veracruz,Otra Universidad de Veracruz,Veracruz,Veracruz,Veracruz,1/2/2019
-Veracruz,Poza Rica,Instituto Tecnológico Superior de Poza Rica ext. Tihuatlán,Poza Rica,Poza Rica,Veracruz,1/2/2019
+Veracruz,Poza Rica,Instituto Tecnológico Superior de Poza Rica ext. Tihuatlán,Poza Rica,Veracruz,Veracruz,1/2/2019
 Veracruz,Veracruz,Universidad Veracruzana,Veracruz,Veracruz,Veracruz,1/2/2019
 Veracruz,Veracruz,ITESM Córdoba,Veracruz,Veracruz,Veracruz,1/2/2019
 Veracruz,Veracruz,Universidad Euro Hispanoamericana,Veracruz,Veracruz,Veracruz,1/2/2019
@@ -298,12 +298,12 @@ Veracruz,Veracruz,Universidad de Xalapa (UX),Veracruz,Veracruz,Veracruz,1/2/2019
 Veracruz,Veracruz,Universidad Tecmilenio,Veracruz,Veracruz,Veracruz,1/2/2019
 Veracruz,Veracruz,UVM Veracruz,Veracruz,Veracruz,Veracruz,1/2/2019
 Veracruz,Veracruz,Universidad Anahuac,Veracruz,Veracruz,Veracruz,1/2/2019
-Yucatán,Yucatán,Universidad Autónoma de Yucatán,Yucatán,Veracruz,Yucatán,1/2/2019
-Yucatán,Yucatán,Universidad Marista,Yucatán,Veracruz,Yucatán,1/2/2019
-Yucatán,Veracruz,Otra Universidad de Yucatán,Yucatán,Veracruz,Yucatán,1/2/2019
-Yucatán,Yucatán,Universidad Modelo,Yucatán,Veracruz,Yucatán,1/2/2019
-Yucatán,Yucatán,EBC Yucatán,Yucatán,Veracruz,Yucatán,1/2/2019
-Yucatán,Yucatán,Universidad Anahuác Mayab,Yucatán,Veracruz,Yucatán,1/2/2019
+Yucatán,Yucatán,Universidad Autónoma de Yucatán,Tabasco,Veracruz,Tabasco,1/2/2019
+Yucatán,Yucatán,Universidad Marista,Tabasco,Veracruz,Tabasco,1/2/2019
+Yucatán,Veracruz,Otra Universidad de Yucatán,Tabasco,Veracruz,Tabasco,1/2/2019
+Yucatán,Yucatán,Universidad Modelo,Tabasco,Veracruz,Tabasco,1/2/2019
+Yucatán,Yucatán,EBC Yucatán,Tabasco,Veracruz,Tabasco,1/2/2019
+Yucatán,Yucatán,Universidad Anahuác Mayab,Tabasco,Veracruz,Tabasco,1/2/2019
 Zacatecas,Zacatecas,Universidad Autónoma de Zacatecas ,Zacatecas,Zacatecas,León,1/2/2019
 Zacatecas,Zacatecas,Instituto Tecnológico de Zacatecas ITZ,Zacatecas,Zacatecas,León,1/2/2019
 Zacatecas,Zacatecas,Universidad Autónoma de Durango Campus Zacatecas,Zacatecas,Zacatecas,León,1/2/2019
