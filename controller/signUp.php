@@ -35,6 +35,7 @@ define('COLLEGE_SELECT',"collegeCareerSelect");
 define('ENGLISH_SELECT',"englishSelect");
 define('FLIGHT_SELECT',"flightSelect");
 define('SEMESTER_SELECT',"semesterSelect");
+
 define('EY_SELECT',"eySelect");
 define('PRODUCT_SELECT',"product");
 define('REFERRAL',"sourceSelect");
@@ -466,7 +467,6 @@ function addToPodio($product,$ey_id,$ep_expa_id){
     echo "Authenticated! <br>";
 
     // Set up all item fields from submitted answers
-    gerardo
     $item = new PodioItem(array('app' => new PodioApp(intval($app["id"])),'fields' =>
       new PodioItemFieldCollection(array(
         new PodioTextItemField(
