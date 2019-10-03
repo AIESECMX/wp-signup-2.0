@@ -30,6 +30,11 @@ define('MOBILE_PHONE',"mobilePhone");
 define('SOURCE_SELECT',"sourceSelect");
 define('STATE_SELECT',"stateSelect");
 define('UNIVERSITY_SELECT',"universitySelect");
+
+define('COLLEGE_SELECT',"collegeCareerSelect");
+define('ENGLISH_SELECT',"englishSelect");
+define('FLIGHT_SELECT',"flightSelect");
+define('SEMESTER_SELECT',"semesterSelect");
 define('EY_SELECT',"eySelect");
 define('PRODUCT_SELECT',"product");
 define('REFERRAL',"sourceSelect");
@@ -296,7 +301,7 @@ function curl_errors($ch) {
 
 }
 
-function validate_post($data) { return isset($data[FIRST_NAME]) && isset($data[LAST_NAME]) && isset($data[EMAIL]) && isset($data[MOBILE_PHONE]) && isset($data[SOURCE_SELECT]) && isset($data[STATE_SELECT]) && isset($data[UNIVERSITY_SELECT]); }
+function validate_post($data) { return isset($data[FIRST_NAME]) && isset($data[LAST_NAME]) && isset($data[EMAIL]) && isset($data[MOBILE_PHONE]) && isset($data[SOURCE_SELECT]) && isset($data[STATE_SELECT]) && isset($data[UNIVERSITY_SELECT]) && isset($data[COLLEGE_SELECT]) && isset($data[ENGLISH_SELECT]) && isset($data[FLIGHT_SELECT]) && isset($data[SEMESTER_SELECT]) ; }
 
 //TO-DO: Separate Model construction into "Model" folder
 function get_redis() {
@@ -461,6 +466,7 @@ function addToPodio($product,$ey_id,$ep_expa_id){
     echo "Authenticated! <br>";
 
     // Set up all item fields from submitted answers
+    gerardo
     $item = new PodioItem(array('app' => new PodioApp(intval($app["id"])),'fields' =>
       new PodioItemFieldCollection(array(
         new PodioTextItemField(
@@ -475,6 +481,18 @@ function addToPodio($product,$ey_id,$ep_expa_id){
         new PodioTextItemField(
           array("external_id" => $app["fields"][MOBILE_PHONE], "values" => $_POST[MOBILE_PHONE])
         ),
+        new PodioTextItemField(
+          array("external_id" => $app["fields"][COLLEGE_SELECT], "values" => $_POST[COLLEGE_SELECT])
+        ),
+        new PodioTextItemField(
+          array("external_id" => $app["fields"][ENGLISH_SELECT], "values" => $_POST[ENGLISH_SELECT])
+        ),
+        new PodioTextItemField(
+          array("external_id" => $app["fields"][FLIGHT_SELECT], "values" => $_POST[FLIGHT_SELECT])
+        ),
+        new PodioTextItemField(
+          array("external_id" => $app["fields"][SEMESTER_SELECT], "values" => $_POST[SEMESTER_SELECT])
+        ),
         new PodioCategoryItemField(
           array("external_id" => $app["fields"][SOURCE_SELECT], "values" => intval($_POST[SOURCE_SELECT]))
         ),
@@ -486,6 +504,7 @@ function addToPodio($product,$ey_id,$ep_expa_id){
           "external_id" => $app["fields"][UNIVERSITY_SELECT],
           "values" => [ intval($redis->hget(UNIVERSITIES.":".$_POST[UNIVERSITY_SELECT],"id")) ]
         )),
+        
         new PodioAppItemField(array(
           "external_id" => $app["fields"][EY_SELECT],
           "values" => [ intval($ey_id) ]
