@@ -31,10 +31,10 @@ define('SOURCE_SELECT',"sourceSelect");
 define('STATE_SELECT',"stateSelect");
 define('UNIVERSITY_SELECT',"universitySelect");
 
-define('COLLEGE_SELECT',"collegeCareerSelect");
-define('ENGLISH_SELECT',"englishSelect");
-define('FLIGHT_SELECT',"flightSelect");
-define('SEMESTER_SELECT',"semesterSelect");
+// define('COLLEGE_SELECT',"collegeCareerSelect");
+// define('ENGLISH_SELECT',"englishSelect");
+// define('FLIGHT_SELECT',"flightSelect");
+// define('SEMESTER_SELECT',"semesterSelect");
 
 define('EY_SELECT',"eySelect");
 define('PRODUCT_SELECT',"product");
@@ -302,7 +302,18 @@ function curl_errors($ch) {
 
 }
 
-function validate_post($data) { return isset($data[FIRST_NAME]) && isset($data[LAST_NAME]) && isset($data[EMAIL]) && isset($data[MOBILE_PHONE]) && isset($data[SOURCE_SELECT]) && isset($data[STATE_SELECT]) && isset($data[UNIVERSITY_SELECT]) && isset($data[COLLEGE_SELECT]) && isset($data[ENGLISH_SELECT]) && isset($data[FLIGHT_SELECT]) && isset($data[SEMESTER_SELECT]) ; }
+function validate_post($data) { return 
+  isset($data[FIRST_NAME]) && 
+  isset($data[LAST_NAME]) && 
+  isset($data[EMAIL]) && 
+  isset($data[MOBILE_PHONE]) && 
+  isset($data[SOURCE_SELECT]) && 
+  isset($data[STATE_SELECT]) && 
+  isset($data[UNIVERSITY_SELECT]) ;}
+  // isset($data[COLLEGE_SELECT]) && 
+  // isset($data[ENGLISH_SELECT]) && 
+  // isset($data[FLIGHT_SELECT]) && 
+  // isset($data[SEMESTER_SELECT]) ; }
 
 //TO-DO: Separate Model construction into "Model" folder
 function get_redis() {
@@ -481,18 +492,18 @@ function addToPodio($product,$ey_id,$ep_expa_id){
         new PodioTextItemField(
           array("external_id" => $app["fields"][MOBILE_PHONE], "values" => $_POST[MOBILE_PHONE])
         ),
-        new PodioTextItemField(
-          array("external_id" => $app["fields"][COLLEGE_SELECT], "values" => $_POST[COLLEGE_SELECT])
-        ),
-        new PodioTextItemField(
-          array("external_id" => $app["fields"][ENGLISH_SELECT], "values" => $_POST[ENGLISH_SELECT])
-        ),
-        new PodioTextItemField(
-          array("external_id" => $app["fields"][FLIGHT_SELECT], "values" => $_POST[FLIGHT_SELECT])
-        ),
-        new PodioTextItemField(
-          array("external_id" => $app["fields"][SEMESTER_SELECT], "values" => $_POST[SEMESTER_SELECT])
-        ),
+        // new PodioTextItemField(
+        //   array("external_id" => $app["fields"][COLLEGE_SELECT], "values" => $_POST[COLLEGE_SELECT])
+        // ),
+        // new PodioTextItemField(
+        //   array("external_id" => $app["fields"][ENGLISH_SELECT], "values" => $_POST[ENGLISH_SELECT])
+        // ),
+        // new PodioTextItemField(
+        //   array("external_id" => $app["fields"][FLIGHT_SELECT], "values" => $_POST[FLIGHT_SELECT])
+        // ),
+        // new PodioTextItemField(
+        //   array("external_id" => $app["fields"][SEMESTER_SELECT], "values" => $_POST[SEMESTER_SELECT])
+        // ),
         new PodioCategoryItemField(
           array("external_id" => $app["fields"][SOURCE_SELECT], "values" => intval($_POST[SOURCE_SELECT]))
         ),
