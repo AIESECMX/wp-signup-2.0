@@ -11,7 +11,7 @@ require_once './errors/ExpaExceptions.php';
 //Is this debug mode?
 // * If yes(1), set captcha sandbox & test Podio Workspace;
 // * else(0), set production keys
-define('DEBUG',0);
+define('DEBUG',1);
 
 //Load Private Keys from Configuration File
 //Do not keep on local folder. Keep outside of public-web to ensure non authorized people won't enter. Also, chmod this accordingly :)
@@ -30,10 +30,10 @@ define('MOBILE_PHONE',"mobilePhone");
 define('SOURCE_SELECT',"sourceSelect");
 define('STATE_SELECT',"stateSelect");
 define('UNIVERSITY_SELECT',"universitySelect");
-//define('COLLEGE_SELECT',"collegeCareerSelect");
-// define('ENGLISH_SELECT',"englishSelect");
-// define('FLIGHT_SELECT',"flightSelect");
-// define('SEMESTER_SELECT',"semesterSelect");
+define('COLLEGE_SELECT',"collegeCareerSelect");
+define('ENGLISH_SELECT',"englishSelect");
+define('FLIGHT_SELECT',"flightSelect");
+define('SEMESTER_SELECT',"semesterSelect");
 
 define('EY_SELECT',"eySelect");
 define('PRODUCT_SELECT',"product");
@@ -145,7 +145,7 @@ if( check_captcha() ) {
   }
 }
 else {
-  //Log this has happened just to verify we have humans trying to acces our resources
+  //Log this has happened just to verify we have humans trying to access our resources
   header("Location: http://aiesec.org.mx/registro_no/?error=captcha");
   die("La verificación CAPTCHA falló. Por favor intente de nuevo");
 }
@@ -310,10 +310,6 @@ function validate_post($data) { return
   isset($data[SOURCE_SELECT]) && 
   isset($data[STATE_SELECT]) && 
   isset($data[UNIVERSITY_SELECT]) ;}
-  // isset($data[COLLEGE_SELECT]) && 
-  // isset($data[ENGLISH_SELECT]) && 
-  // isset($data[FLIGHT_SELECT]) && 
-  // isset($data[SEMESTER_SELECT]) ; }
 
 //TO-DO: Separate Model construction into "Model" folder
 function get_redis() {
@@ -492,18 +488,9 @@ function addToPodio($product,$ey_id,$ep_expa_id){
         new PodioTextItemField(
           array("external_id" => $app["fields"][MOBILE_PHONE], "values" => $_POST[MOBILE_PHONE])
         ),
-        // new PodioTextItemField(
-        //   array("external_id" => $app["fields"][COLLEGE_SELECT], "values" => $_POST[COLLEGE_SELECT])
-        // ),
-        // new PodioTextItemField(
-        //   array("external_id" => $app["fields"][ENGLISH_SELECT], "values" => $_POST[ENGLISH_SELECT])
-        // ),
-        // new PodioTextItemField(
-        //   array("external_id" => $app["fields"][FLIGHT_SELECT], "values" => $_POST[FLIGHT_SELECT])
-        // ),
-        // new PodioTextItemField(
-        //   array("external_id" => $app["fields"][SEMESTER_SELECT], "values" => $_POST[SEMESTER_SELECT])
-        // ),
+        new PodioTextItemField(
+          array("external_id" => $app["fields"][COLLEGE_SELECT], "values" => $_POST[COLLEGE_SELECT])
+        ),
         new PodioCategoryItemField(
           array("external_id" => $app["fields"][SOURCE_SELECT], "values" => intval($_POST[SOURCE_SELECT]))
         ),
