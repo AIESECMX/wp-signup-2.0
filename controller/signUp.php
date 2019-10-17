@@ -237,7 +237,7 @@ function sendToExpa($lc_id){
       'mc' => MC_ID,
       'phone' => htmlspecialchars($_POST[MOBILE_PHONE]),
       'college_career' => htmlspecialchars($_POST[COLLEGE_SELECT]),
-
+      
       'lc_input' => $lc_id, //Put here EY code
       'lc' => $lc_id,  //Put here EY code
       //'alignment_id' => '', //Put here alignment ID
@@ -311,7 +311,7 @@ function validate_post($data) { return
   isset($data[MOBILE_PHONE]) && 
   isset($data[SOURCE_SELECT]) && 
   isset($data[STATE_SELECT]) && 
-  isset($data[UNIVERSITY_SELECT])
+  isset($data[UNIVERSITY_SELECT]) &&
   isset($data[COLLEGE_SELECT]) && 
   isset($data[ENGLISH_SELECT]) && 
   isset($data[FLIGHT_SELECT]) && 
