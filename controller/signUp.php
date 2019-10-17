@@ -237,6 +237,7 @@ function sendToExpa($lc_id){
       'mc' => MC_ID,
       'phone' => htmlspecialchars($_POST[MOBILE_PHONE]),
       'college_career' => htmlspecialchars($_POST[COLLEGE_SELECT]),
+      
       'lc_input' => $lc_id, //Put here EY code
       'lc' => $lc_id,  //Put here EY code
       //'alignment_id' => '', //Put here alignment ID
