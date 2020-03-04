@@ -1,5 +1,5 @@
 state,lc_name,university,oGV,oGE,oGT,valid_from
-Aguascalientes,Aguascalientes,Instituto Tecnológico de Monterrey Campus Aguascalientes,Aguascalientes,León,León,1/2/2020
+Aguascalientes,Aguascalientes,Instituto Tecnológico de Monterrey Campus Aguascalientes,Aguascalientes,León,León,1/2/2019
 Aguascalientes,Aguascalientes,Otra Universidad de Aguascalientes,Aguascalientes,León,León,1/2/2019
 Aguascalientes,Aguascalientes,UCA,Aguascalientes,León,León,1/2/2019
 Aguascalientes,Aguascalientes,Universidad Autónoma de Aguascalientes,Aguascalientes,León,León,1/2/2019
@@ -17,21 +17,21 @@ CDMX,Tec Santa Fe,CENTRO,Tec Santa Fe,Tec Santa Fe,Tec Santa Fe,1/2/2019
 CDMX,ITAM,Centro de Estudios Superiores de San Ángel - CESSA,ITAM,ITAM,ITAM,1/2/2019
 CDMX,UP,Centro de Estudios Universitarios en Ciencias de la Comunicación - CECC,UP,UP,UP,1/2/2019
 CDMX,Tec Santa Fe,Centro de Investigación y Docencias Económicas,Tec Santa Fe,Tec Santa Fe,Tec Santa Fe,1/2/2019
-CDMX,UNAM,Claustro de Sor Juana,UNAM,UNAM,UNAM,1/2/2020
-CDMX,ITAM,Colegio de México A.C.,ITAM,ITAM,ITAM,1/2/2020
+CDMX,UNAM,Claustro de Sor Juana,UNAM,UNAM,UNAM,1/2/2019
+CDMX,ITAM,Colegio de México A.C.,ITAM,ITAM,ITAM,1/2/2019
 CDMX,La Salle,Escuela Bancaria y Comercial - EBC (Campus Ciudad de México),La Salle,UNAM,La Salle,1/2/2019
 CDMX,Tec CEM,Escuela Bancaria y Comercial - EBC (Campus Reforma),Tec CEM,Tec CEM,Tec Santa Fe,1/2/2019
-CDMX,IPN,Instituto Politécnico Nacional - ESCA,IPN,ITAM,IPN,1/2/2020
-CDMX,IPN,Instituto Politécnico Nacional - ESCOM,IPN,ITAM,IPN,1/2/2020
-CDMX,IPN,Instituto Politécnico Nacional - UPIICSA,IPN,ITAM,IPN,1/2/2020
+CDMX,IPN,Instituto Politécnico Nacional - ESCA,IPN,ITAM,IPN,1/2/2019
+CDMX,IPN,Instituto Politécnico Nacional - ESCOM,IPN,ITAM,IPN,1/2/2019
+CDMX,IPN,Instituto Politécnico Nacional - UPIICSA,IPN,ITAM,IPN,1/2/2019
 CDMX,Tec Santa Fe,Instituto Tecnológico y de Estudios Superiores de Monterrey (Campus CCM),Tec Santa Fe,Tec Santa Fe,Tec Santa Fe,1/2/2019
 CDMX,Tec Santa Fe,Instituto Tecnológico y de Estudios Superiores de Monterrey (Campus Santa Fe),Tec Santa Fe,Tec Santa Fe,Tec Santa Fe,1/2/2019
 CDMX,ITAM,ITAM - Instituto Tecnológico Autónomo de México,ITAM,ITAM,ITAM,1/2/2019
-CDMX,La Salle,Otra universidad de CDMX Centro,La Salle,UNAM,La Salle,1/2/2020
-CDMX,IPN,Otra universidad de CDMX Norte,IPN,Tec Santa Fe,IPN,1/2/2020
-CDMX,Tec Santa Fe,Otra universidad de CDMX Poniente,Tec Santa Fe,Tec Santa Fe,Tec Santa Fe,1/2/2020
-CDMX,UNAM,Otra universidad de CDMX Sur,UNAM,UNAM,UNAM,1/2/2020
-CDMX,UNAM,UNAM - Facultad de Artes y Diseño,UNAM,UNAM,UNAM,1/2/2020
+CDMX,La Salle,Otra universidad de CDMX Centro,La Salle,UNAM,La Salle,1/2/2019
+CDMX,IPN,Otra universidad de CDMX Norte,IPN,Tec Santa Fe,IPN,1/2/2019
+CDMX,Tec Santa Fe,Otra universidad de CDMX Poniente,Tec Santa Fe,Tec Santa Fe,Tec Santa Fe,1/2/2019
+CDMX,UNAM,Otra universidad de CDMX Sur,UNAM,UNAM,UNAM,1/2/2019
+CDMX,UNAM,UNAM - Facultad de Artes y Diseño,UNAM,UNAM,UNAM,1/2/2019
 CDMX,UNAM,UNAM - Facultades de Estudios Superiores,UNAM,UNAM,UNAM,1/2/2019
 CDMX,Tec Santa Fe,Universidad Anáhuac (Campus Norte),Tec Santa Fe,Tec Santa Fe,Tec Santa Fe,1/2/2019
 CDMX,ITAM,Universidad Anáhuac (Campus Sur),ITAM,ITAM,ITAM,1/2/2019
@@ -39,26 +39,26 @@ CDMX,Tec Santa Fe,Universidad Autónoma Metropolitana - UAM (Campus Cuajimalpa),
 CDMX,Tec Santa Fe,Universidad Autónoma Metropolitana - UAM (Campus Santa Fe),Tec Santa Fe,Tec Santa Fe,Tec Santa Fe,1/2/2019
 CDMX,UNAM,Universidad Autónoma Metropolitana - UAM (Xochimilco),UNAM,UNAM,UNAM,1/2/2019
 CDMX,IPN,Universidad Autónoma Metropolitana (Campus Azcapotzalco),IPN,ITAM,IPN,1/2/2019
-CDMX,UNAM,Universidad de Insurgentes,UNAM,UNAM,UNAM,1/2/2020
+CDMX,UNAM,Universidad de Insurgentes,UNAM,UNAM,UNAM,1/2/2019
 CDMX,UNAM,Universidad de la Comunicación,UNAM,UNAM,UNAM,1/2/2019
 CDMX,La Salle,Universidad de las Américas (UDLA),La Salle,UNAM,La Salle,1/2/2019
 CDMX,La Salle,Universidad de Londres,La Salle,UNAM,La Salle,1/2/2019
 CDMX,IPN,Universidad del Claustro de Sor Juana,IPN,ITAM,IPN,1/2/2019
 CDMX,UP,Universidad del Desarrollo Empresarial y Pedagógico,UP,UP,UP,1/2/2019
 CDMX,UP,Universidad del Valle de México - UVM (Campus Coyoacán),UP,UP,UP,1/2/2019
-CDMX,ITAM,Universidad del Valle de México - UVM (Campus San Ángel),ITAM,ITAM,ITAM,1/2/2020
-CDMX,IPN,Universidad del Valle de México - UVM (Campus San Rafael),IPN,ITAM,IPN,1/2/2020
-CDMX,UP,Universidad del Valle de México - UVM (Campus Tlalpan),UP,UP,UP,1/2/2020
+CDMX,ITAM,Universidad del Valle de México - UVM (Campus San Ángel),ITAM,ITAM,ITAM,1/2/2019
+CDMX,IPN,Universidad del Valle de México - UVM (Campus San Rafael),IPN,ITAM,IPN,1/2/2019
+CDMX,UP,Universidad del Valle de México - UVM (Campus Tlalpan),UP,UP,UP,1/2/2019
 CDMX,ITAM,Universidad Iberoamericana,ITAM,ITAM,ITAM,1/2/2019
 CDMX,UP,Universidad Intercontinental,UP,UP,UP,1/2/2019
-CDMX,IPN,Universidad Justo Sierra (Campus Cien metros),IPN,ITAM,IPN,1/2/2020
-CDMX,La Salle,Universidad La Salle Condesa,La Salle,UNAM,La Salle,1/2/2020
-CDMX,La Salle,Universidad La Salle Nezahualcóyotl,La Salle,UNAM,La Salle,1/2/2020
+CDMX,IPN,Universidad Justo Sierra (Campus Cien metros),IPN,ITAM,IPN,1/2/2019
+CDMX,La Salle,Universidad La Salle Condesa,La Salle,UNAM,La Salle,1/2/2019
+CDMX,La Salle,Universidad La Salle Nezahualcóyotl,La Salle,UNAM,La Salle,1/2/2019
 CDMX,UNAM,Universidad Nacional Autónoma de México - UNAM,UNAM,UNAM,UNAM,1/2/2019
 CDMX,UP,Universidad Panamericana (UP),UP,UP,UP,1/2/2019
-CDMX,IPN,Universidad Simón Bolivar,IPN,ITAM,IPN,1/2/2020
+CDMX,IPN,Universidad Simón Bolivar,IPN,ITAM,IPN,1/2/2019
 CDMX,UNAM,Universidad Tecnológica Americana - UTECA,UNAM,UNAM,UNAM,1/2/2019
-CDMX,IPN,Universidad Tecnológica de México,IPN,ITAM,IPN,1/2/2020
+CDMX,IPN,Universidad Tecnológica de México,IPN,ITAM,IPN,1/2/2019
 Chiapas,Tabasco,Otra Universidad de Chiapas,Tabasco,Oaxaca,Tabasco,1/2/2019
 Chiapas,Tabasco,Universidad Autónoma de Chiapas,Tabasco,Oaxaca,Tabasco,1/2/2019
 Chihuahua,Chihuahua,Instituto Tecnológico de Chihuahua,Chihuahua,Sinaloa,Ciudad Juárez,1/2/2019
@@ -75,10 +75,10 @@ Coahuila,La Laguna,Instituto Tecnológico de La Laguna,La Laguna,La Laguna,Tec M
 Coahuila,La Laguna,Instituto Tecnológico y de Estudios Superiores de Monterrey (Campus Laguna),La Laguna,La Laguna,Tec Monterrey,1/2/2019
 Coahuila,La Laguna,Otra Universidad de Coahuila,La Laguna,La Laguna,Tec Monterrey,1/2/2019
 Coahuila,La Laguna,Universidad Autónoma de Coahuila,La Laguna,La Laguna,Tec Monterrey,1/2/2019
-Coahuila,La Laguna,Universidad Autónoma de La Laguna,La Laguna,La Laguna,Tec Monterrey,1/2/2020
+Coahuila,La Laguna,Universidad Autónoma de La Laguna,La Laguna,La Laguna,Tec Monterrey,1/2/2019
 Coahuila,La Laguna,Universidad del Valle de México - UVM (Campus Laguna),La Laguna,La Laguna,Tec Monterrey,1/2/2019
 Coahuila,La Laguna,Universidad Iberoamericana (Campus Torreón),La Laguna,La Laguna,Tec Monterrey,1/2/2019
-Coahuila,La Laguna,Universidad Juárez del Estado de Durango,La Laguna,La Laguna,Tec Monterrey,1/2/2020
+Coahuila,La Laguna,Universidad Juárez del Estado de Durango,La Laguna,La Laguna,Tec Monterrey,1/2/2019
 Coahuila,La Laguna,Universidad Tecmilenio (Campus Laguna),La Laguna,La Laguna,Tec Monterrey,1/2/2019
 Colima,Querétaro,Todas las Universidades de Colima,Querétaro,Querétaro,Querétaro,1/2/2019
 Durango,Zacatecas,Otra Universidad de Durango,Zacatecas,Zacatecas,Ciudad Juárez,1/2/2019
