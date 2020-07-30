@@ -34,6 +34,7 @@ define('UNIVERSITY_SELECT',"universitySelect");
 define('COLLEGE_SELECT',"collegeCareerSelect");
 define('ENGLISH_SELECT',"englishSelect");
 define('FLIGHT_SELECT',"flightSelect");
+define('PERIOD_SELECT',"periodSelect");
 define('SEMESTER_SELECT',"semesterSelect");
 
 define('EY_SELECT',"eySelect");
@@ -314,6 +315,7 @@ function validate_post($data) { return
   isset($data[UNIVERSITY_SELECT]) &&
   isset($data[COLLEGE_SELECT]) && 
   isset($data[ENGLISH_SELECT]) && 
+  isset($data[PERIOD_SELECT]) &&
   isset($data[FLIGHT_SELECT]) && 
   isset($data[SEMESTER_SELECT]) ; }
 
@@ -499,6 +501,9 @@ function addToPodio($product,$ey_id,$ep_expa_id){
         ),
         new PodioTextItemField(
           array("external_id" => $app["fields"][ENGLISH_SELECT], "values" => $_POST[ENGLISH_SELECT])
+        ),
+        new PodioTextItemField(
+          array("external_id" => $app["fields"][PERIOD_SELECT], "values" => $_POST[PERIOD_SELECT])
         ),
         new PodioTextItemField(
           array("external_id" => $app["fields"][FLIGHT_SELECT], "values" => $_POST[FLIGHT_SELECT])
