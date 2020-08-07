@@ -22,6 +22,8 @@ else {
   $configs_external = include('/home/webmaster/wp-config-files/signup_config.php'); //Set a location of your choosign
 }
 
+$sentryClient = new Raven_Client($configs_external['sentry_dsn']);
+
 //Config the <form> fields name to be retrieved from $_POST
 define('FIRST_NAME',"firstName");
 define('LAST_NAME',"lastName");
@@ -106,6 +108,7 @@ if( check_captcha() ) {
     try {
       $ep_id = sendToExpa($ids['expa']); //Signs up EP on EXPA with a randomly generated (not yet) password. Sends that password to the user's email (not yet)
     } catch(EXPA\EmailException $e) {
+      $sentryClient->captureException($e);
       $ep_id = null;
       error_log("signup_error: Email already exists on EXPA");
       echo "I had an email exception <br>";
@@ -114,6 +117,7 @@ if( check_captcha() ) {
       header("Location: http://aiesec.org.mx/registro_no/?error=email_exists");
       die($e->getMessage());
     } catch(Exception $e) {
+      $sentryClient->captureException($e);
       error_log("signup_error: ".$e->getMessage());
       echo "I had a random exception: ".$e->getMessage()."<br>";
       $ep_id = null;
@@ -129,10 +133,12 @@ if( check_captcha() ) {
     try {
       addToPodio($product,$ids['podio'],isset($ep_id)?$ep_id:null); //EP ID for future feature of PDY anonymization
     } catch (PodioError $e) {
+      $sentryClient->captureException($e);
       //This needs an extra redirection
       header("Location: http://aiesec.org.mx/registro_no/?error=podio");
       die($e->getMessage());
     } catch(Exception $e) {
+      $sentryClient->captureException($e);
       error_log($e->getTrace());
       header("Location: http://aiesec.org.mx/registro_no");
       die($e->getMessage());
