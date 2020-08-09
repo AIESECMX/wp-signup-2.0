@@ -147,12 +147,14 @@ if( check_captcha() ) {
     header(getRedirection($product));
   }
   else {
+    $sentryClient->captureMessage('Field validation failed');
     //We need some way to log this has happened
     header("Location: http://aiesec.org.mx/registro_no/?error=validation");
     die("Hubo un error al completar los campos. Por favor asegúrese de que todos los datos son correctos e intente de nuevo.");
   }
 }
 else {
+  $sentryClient->captureMessage('CAPTCHA verification failed');
   //Log this has happened just to verify we have humans trying to acces our resources
   header("Location: http://aiesec.org.mx/registro_no/?error=captcha");
   die("La verificación CAPTCHA falló. Por favor intente de nuevo");
