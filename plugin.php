@@ -6,7 +6,6 @@ Version: 2.0.0
 Author: Sergio Garcia
 Author URI: https://www.linkedin.com/in/sgs_garcia
 License: GPL 
-TEST: YES
 */
 wp_enqueue_script('jquery');
 
@@ -43,101 +42,30 @@ function getForm($product = "",$configs = null) {
   return $form;
 }
 
-function getFormWithError($form,$code) {
-  $msg = null;
-  switch($code) {
-    case "email":
-      $msg = "Ya te has registrado con esta dirección de correo. Intenta de nuevo con otro correo electrónico.";
-      break;
-    case "validation":
-      $msg = "Los datos ingresados no son válidos, por favor intenta de nuevo.";
-      break;
-    case "captcha":
-      $msg = "La verificación CAPTCHA es incorrecta, por favor intenta de nuevo.";
-      break;
-  }
-
-  if($msg != null) {
-    $form = str_replace('<div id="error" class="error"><p></p></div>','<div id="error" class="error-show"><p>'.$msg.'</p></div>',$form);
-  }
-
-  return $form;
-}
-
 //General Sign-up Form
 function signup_form( $atts ) {
     load_scripts();
 
-    //This part is legacy, better leave it as is
-    $a = shortcode_atts( array(
-        'program' => '',
-    ), $atts );
-
     $configs = include('config.php');
-    $form = getForm("",$configs);
-    
-    //Legacy: Better leave it "as is"
-    if(isset($_GET["thank_you"]) && $_GET["thank_you"]==="true") {
-      return $configs["thank-you-message"]; 
-    }
-    if (isset($_REQUEST['error'])) {
-      return getFormWithError($form,$_REQUEST['error']);    
-    }
-
-    return $form;
-
+    return getForm("",$configs);
 }
 add_shortcode('signup-form', 'signup_form');
-
 
 //OGT
 function signup_form_ogt( $atts ) {
     load_scripts("--gt-color");
 
-    //This part is legacy, better leave it as is
-    $a = shortcode_atts( array(
-        'program' => '',
-    ), $atts );
-
     $configs = include('config.php');
-    $form = getForm("ogt",$configs);
-    
-    //Legacy: Better leave it "as is"
-    if(isset($_GET["thank_you"]) && $_GET["thank_you"]==="true") {
-      return $configs["thank-you-message"]; 
-    }
-    if (isset($_REQUEST['error'])) {
-      return getFormWithError($form,$_REQUEST['error']);    
-    }
-
-    return $form;
+    return getForm("ogt",$configs);
 }
 add_shortcode( 'signup-form-ogt', 'signup_form_ogt' );
-
-
-
 
 //OGV
 function signup_form_ogv( $atts ) {
     load_scripts("--gv-color");
 
-    //This part is legacy, better leave it as is
-    $a = shortcode_atts( array(
-        'program' => '',
-    ), $atts );
-
     $configs = include('config.php');
-    $form = getForm("ogv",$configs);
-
-    //Legacy: Better leave it "as is"
-    if(isset($_GET["thank_you"]) && $_GET["thank_you"]==="true") {
-      return $configs["thank-you-message"]; 
-    }
-    if (isset($_REQUEST['error'])) {
-      return getFormWithError($form,$_REQUEST['error']);    
-    }
-
-    return $form;
+    return getForm("ogv",$configs);
 }
 add_shortcode( 'signup-form-ogv', 'signup_form_ogv' );
 
@@ -145,22 +73,7 @@ add_shortcode( 'signup-form-ogv', 'signup_form_ogv' );
 function signup_form_oge( $atts ) {
     load_scripts("--ge-color");
 
-    //This part is legacy, better leave it as is
-    $a = shortcode_atts( array(
-        'program' => '',
-    ), $atts );
-
     $configs = include('config.php');
-    $form = getForm("oge",$configs);
-    
-    //Legacy: Better leave it "as is"
-    if(isset($_GET["thank_you"]) && $_GET["thank_you"]==="true") {
-      return $configs["thank-you-message"]; 
-    }
-    if (isset($_REQUEST['error'])) {
-      return getFormWithError($form,$_REQUEST['error']);    
-    }
-
-    return $form;
+    return getForm("oge",$configs);
 }
 add_shortcode( 'signup-form-oge', 'signup_form_oge' );
