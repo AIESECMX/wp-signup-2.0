@@ -32,6 +32,8 @@ define('MOBILE_PHONE',"mobilePhone");
 define('SOURCE_SELECT',"sourceSelect");
 define('STATE_SELECT',"stateSelect");
 define('UNIVERSITY_SELECT',"universitySelect");
+define('BLUE_DAYS',"blueDays");
+define('WEBSITE_URL', "website_url");
 
 define('COLLEGE_SELECT',"collegeCareerSelect");
 define('ENGLISH_SELECT',"englishSelect");
@@ -530,7 +532,9 @@ function addToPodio($product,$ey_id,$ep_expa_id){
           "external_id" => $app["fields"][UNIVERSITY_SELECT],
           "values" => [ intval($redis->hget(UNIVERSITIES.":".$_POST[UNIVERSITY_SELECT],"id")) ]
         )),
-        
+        new PodioCategoryItemField(
+          array("external_id" => $app["fields"][BLUE_DAYS], "values" => blueDaysValue($_POST[WEBSITE_URL]))
+        ),
         new PodioAppItemField(array(
           "external_id" => $app["fields"][EY_SELECT],
           "values" => [ intval($ey_id) ]
@@ -589,6 +593,13 @@ function getRedirection($product = "") {
     default:
       return "Location: https://aiesec.org.mx/thankyou-general/";
   }
+}
+
+function blueDaysValue($url) {
+  if(strpos($url, "bluedays") !== false) {
+    return 1; // Yes
+  }
+  return 2; // No
 }
 
 /**
